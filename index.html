@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>DIGIPETS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="responsive, Veterinaria, virtual, pets, telemedicina, animales,consultas">
+    <meta name="description" content="Sitio web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="NATALIA ACOSTA, JAIDER MORALES, GABRIEL BARRERA, JULIAN GRANADOS, LUIS VARRON">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css" >
+    <link rel="stylesheet" type="text/css" href="css/estilonavegador.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!--LINK PARA LIBRERIA DE ICONOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<!--  ENCABEZADO DE LA PAGINA -->
+<nav >
+        
+    <!--ICONO DE MENU HAMBURGUESA-->
+    <input type="checkbox" id="check">
+    <label for ="check" class="checkbtn"> 
+        <i class="fas fa fa-bars"></i>
+    </label>
+    <!--LOGO-->
+    <ul class="lista" id="l1">
+      <li ><a href="index.html"><img src="img/LOGO-HORIZONTAL.png" alt=""></a></li>
+    </ul> 
+    <!--ELEMENTOS DEL MENU -->
+    <ul class="lista" id="l2">
+        <li ><a href=""><img src="gif/search.gif" class="lupa"  alt="" ></a></li> <!--GIF DE LUPA-->
+        <li><a  href="#inisiarsesion">Solicitar cita</a></li> 
+        <li ><a href="#inisiarsesion">servicios</a></li>
+        <li ><a href="#inisiarsesion">Planes</a></li>
+        <li><a  href="#inisiarsesion">Donaciones</a></li> 
+        <li ><a href="#inisiarsesion">PetShop</a></li>
+        <li><a href="php/ReporteUsuarios.php" class="btn-small blue z-depth-2">Reporte</a></li>
+    </ul>
+    <!--BOTON DE INICIO DE SECION -->
+    <ul class="lista" id="l3">
+      <li><div><b><a id="boton" href="#inisiarsesion">Iniciar sesión</a></b></div></li>
+    </ul>  
+    <!--GIF DE CASA COMPRAS-->
+    <ul class="lista" id="l4">
+            <li><a id="boton1" href=""><img src="gif/pet-shop.gif" alt=""></a></li>
+    </ul>
+</nav>
+<!--TERMINA ENCABEZADO DE LA PAGINA -->>
+
+<!--ABRE INICIO SESION POPUP-->
+<div id="contenedorinicio" class="cerrado">
+  <ul id="contenedorinicioart">
+    <li><a href="#inisiarsesion" class="btn-open-popup">Iniciar sesión</a></li>
+  </ul>
+</div>
+<!---------------------------------------------------------------------------->
+
+<!--POPUP PARA INICIO DE SECION -->
+    <div class="container-all" id="inisiarsesion">
+        <div class="popup">
+            <div class="img"></div>
+            <div class="container-text">
+            <form action="php/login.php" method="POST"> 
+            <h1>INICIAR SESIÓN</h1>
+            <label for="">Correo electronico</label> <br> 
+            <input type="text" name="email" required><br><br>
+            <label for="">Contraseña</label> <br> 
+            <input type="password" name="contraseña" required><br> 
+            <input type="submit" value="INGRESAR"><br>
+            <div >Si no tienes una cuenta por favor  <div id="hola"><a href="#Registrarse">Registrarse</a></div></div>
+            </form>
+            </div>
+            <div><a href="#" class="btn-close-popup">X</a></div>
+        </div> 
+    </div>
+    <div class="container-all" id="Registrarse">
+<!---------------------------------------------------------------------------->
+        
+<!--POPUP PARA REGISTRO DE SECION -->
+        <div class="popup">
+            <div class="img"></div>
+            <div class="container-text">
+            <h1>REGISTRO</h1>
+            <form id="formregistro" action="php/registro.php" method="post" name="form">
+            <label for="nombre">Nombre</label> 
+            <input type="text" id="nombre" name="name" required><br>
+            <label for="correo">Correo electronico</label>
+            <input type="text" name="email" required><br>
+            <label for="">Contraseña</label> 
+            <input type="password" id="contraseña" name="contraseña" required><br>
+            <label for="">Confirmar contraseña</label>
+            <input type="password" id="confirmar" name="confcontraseña" required> <br> 
+            <input type="submit" value="REGISTRARSE" >
+            </form>
+            <div >Si ya tienes una cuenta por favor  <div id="hola"><a href="#inisiarsesion">Inicia sesión</a></div></div>
+            </div>
+            <div><a href="#" class="btn-close-popup">X</a></div>
+        </div>
+    </div>
+<!----------------------------------------------------------------------------> 
+<!--PROMOCION ENCIMA DE BANNER Y BANNER-->
+<header id="hed1" > 
+    <div  id="banner1">
+        <img src="img/LOGO-VERTICAL_AZUL.png" alt="">
+        <h4>Alimentos y accesorios</h4>
+        <h2>20% off</h2>
+        <a id="botonb1" href="PetShop.html">¡QUIERO MI DESCUENTO!</a>
+    </div>
+    <div><img class="headers" src="img/Banner1.jpg" alt=""></div> 
+    <div><img class="headers1" src="img/Baner1.jpg" alt=""></div><!--IMAGEN DEL BANNER -->
+</header>
+<!----------------------------------------------------------------------------> 
+<!--APARTADO DE SERVICIOS-->
+      <section > 
+          <article class="section" data-aos="fade-up">
+              <h3>SERVICIOS</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum reiciendis tempora eveniet cumque quasi deleniti, quidem excepturi assumenda iste nemo ratione, <br> repellat minus cum ducimus vitae? Praesentium quos deleniti quam.</p>
+          </article>
+      </section>
+<!----------------------------------------------------------------------------> 
+<!--TODAS LAS CATEGORIAS -->
+<!--CATEGORIA 1-->
+    <section id="sec1" >
+        <article class="section1" data-aos="fade-up">
+            <div >
+                <img src="img/FOTO1.png" alt="">
+                <h3>CATEGORIA 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero. orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero.</p> 
+            </div>
+        </article>
+<!--CATEGORIA 2-->
+        <article class="section1" data-aos="fade-up">
+            <div>
+                <img src="img/FOTO2.png" alt="">
+                <h3>CATEGORIA 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero. orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero.</p> 
+            </div>
+        </article>
+<!--CATEGORIA 3-->
+        <article class="section1"data-aos="fade-up">
+            <div>
+                <img src="img/FOTO3.png" alt="">
+                <h3>CATEGORIA 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero. orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero.</p> 
+            </div>
+        </article>
+<!--CATEGORIA 4-->
+        <article class="section1"data-aos="fade-up">
+            <div>
+                <img src="img/FOTO4.png" alt="">
+                <h3>CATEGORIA 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero. orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero.</p> 
+            </div>
+        </article>
+<!--CATEGORIA 5-->
+        <article class="section1"data-aos="fade-up">
+            <div>
+                <img src="img/FOTO5.png" alt="">
+                <h3>CATEGORIA 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero. orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero.</p> 
+            </div>   
+        </article>
+<!--CATEGORIA 6-->
+        <article class="section1"data-aos="fade-up">
+            <div>
+                <img src="img/FOTO6.png" alt="">
+                <h3>CATEGORIA 6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero. orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero.</p> 
+            </div>
+        </article>
+<!--CATEGORIA 7-->
+        <article class="section1"data-aos="fade-up">
+            <div>
+                <img src="img/FOTO7.png" alt="">
+                <h3>CATEGORIA 7</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero. orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero.</p> 
+            </div>
+        </article>
+<!--CATEGORIA 8-->
+        <article class="section1"data-aos="fade-up">
+            <div>
+                <img src="img/FOTO8.png" alt="">
+                <h3>CATEGORIA 8</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero. orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at vero.</p> 
+            </div>
+        </article>
+    </section>
+ 
+
+    <!---------------------SLIDER--------------------->
+
+    <section id="secslider">
+        <article class="sectionslider">
+            <div class="slider">
+
+                <ul>
+                    <li>
+                        <article class="sectionsli">
+                            <div>
+                                <img src="img/FOTO8.png" alt="">
+                                <h3>CATEGORIA 8</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                </p>
+                            </div>
+                        </article>
+                    <li>
+                        <article class="sectionsli">
+                            <div>
+                                <img src="img/FOTO8.png" alt="">
+                                <h3>CATEGORIA 8</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="sectionsli">
+                            <div>
+                                <img src="img/FOTO8.png" alt="">
+                                <h3>CATEGORIA 8</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="sectionsli">
+                            <div>
+                                <img src="img/FOTO8.png" alt="">
+                                <h3>CATEGORIA 8</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="sectionsli">
+                            <div>
+                                <img src="img/FOTO8.png" alt="">
+                                <h3>CATEGORIA 8</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="sectionsli">
+                            <div>
+                                <img src="img/FOTO8.png" alt="">
+                                <h3>CATEGORIA 8</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="sectionsli">
+                            <div>
+                                <img src="img/FOTO8.png" alt="">
+                                <h3>CATEGORIA 8</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="sectionsli">
+                            <div>
+                                <img src="img/FOTO8.png" alt="">
+                                <h3>CATEGORIA 8</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="sectionsli">
+                            <div>
+                                <img src="img/FOTO8.png" alt="">
+                                <h3>CATEGORIA 8</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="sectionsli">
+                            <div>
+                                <img src="img/FOTO8.png" alt="">
+                                <h3>CATEGORIA 8</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                    orem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex placeat at
+                                    vero.
+                                </p>
+                            </div>
+                        </article>
+                    </li>
+            </div>
+        </article>
+    </section>
+
+
+<!---------------------------------------------------------------------------->    
+
+<!--INICIO DE SESION  ENCIMA DE BANNER 2 Y BANNER 2-->
+<header id="hed2" data-aos="fade-up">
+    <div  id="banner2" style="right: 0;">
+        <section style="margin-left: 100px; ">
+                    <h1>REGISTRO</h1>
+                    <form id="formregistro" action="php/registro.php" method="post" name="form">
+                    <label for="">Nombre</label> <br>
+                    <input type="text" name="name"><br>
+                    <label for="">Correo electronico</label> <br>
+                    <input type="text" name="email"><br>
+                    <label for="">Contraseña</label> <br>
+                    <input type="password" name="contraseña"><br>
+                    <label for="">Confirmar contraseña</label><br>
+                    <input type="password" name="confcontraseña"> <br> <br>
+                    <input type="submit" value="REGISTRARSE" > <br><br>
+                    <div>Si ya tienes una cuenta por favor <div id="hola"><a href="#inisiarsesion">Inicia sesión</a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <!------------------------------------------------------------------------>
+            <section>
+                <header>
+                    <div id="heder2" >
+                        <img class="headers" src="img/Banner2.jpg" alt="" >
+                    </div>
+
+                    <div>
+                        <img class="headers2" src="img/Baner2.jpg" alt="">
+                    </div>
+<!---------------------------------------------------------------------------->  
+<!--SECCION DE LA PARTE FINAL -->
+      <section>
+          <article>
+              <footer id="foopets">
+                    <div class=""><img  id="fooimg" src="img/LOGO-HORIZONTAL.png" alt=""></div>
+                    <div class="fp1"><h3>Horario de atención</h3><a href=""><img src="gif/pet-shop.gif"></a><p>Lunes a Domingo<br>9:00 am a 21:00pm </p></div>
+                    <div class="fp1"><h3>Correo</h3><a href=""><img src="gif/pet-shop.gif"></a><p>DIGIPETS@gmail.com <br>VETEDIGITEPS@gmail.com<br></p></div>
+                     <div class="fp1"><h3>Teléfono</h3><a href=""><img src="gif/pet-shop.gif"></a><p>Telefonos de contacto<br> 7832257 - 311 2583291</p></div>
+              </footer>
+          </article>
+      </section>
+
+<!--JAVASCRIPT NECESARIO PARA EL SCROLL-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="js/AnimacionScroll.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!----------------------------------------------------------------------------> 
+</body>
+</html>

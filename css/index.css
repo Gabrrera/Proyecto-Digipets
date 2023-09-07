@@ -1,0 +1,399 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+}
+
+#sec1 {
+    background-color: rgb(13, 65, 148);
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+
+#sec1 .section1 div {
+    padding: 30px 0px;
+    color: aliceblue;
+    margin: 1%;
+    float: left;
+    width: 23%;
+
+}
+
+#sec1 .section1 div img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px 5px 0px;
+}
+
+
+
+.section h3 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vw;
+    margin: 30px 0px 5px 0px;
+    text-transform: uppercase;
+}
+
+.section {
+
+    padding: 50px;
+}
+
+
+.section p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1, 5vw;
+
+}
+
+
+#secslider {
+    display: none;
+
+}
+
+/*------------------------*/
+
+
+.headers1 {
+    display: none;
+}
+
+.headers {
+    background-color: aquamarine;
+    width: 100%;
+    height: 550px;
+    position: relative;
+    z-index: -1;
+}
+
+#hed1 {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+#hed1 #banner1 {
+    position: absolute;
+    margin-top: 9%;
+    display: block;
+    margin-left: 70%;
+    width: 30%;
+    height: 450px;
+    display: block;
+    text-align: center;
+
+}
+
+#botonb1 {
+    width: 80%;
+    position: relative;
+    top: 30px;
+    margin-top: 30px;
+    background-color: rgb(13, 65, 148);
+    padding: 10px 15px;
+    color: azure;
+}
+
+
+#banner2 {
+    position: absolute;
+    display: flex;
+    margin-top: 180px;
+    width: 100%;
+    height: 400px;
+    margin-left: 150px;
+}
+
+.headers2 {
+
+    display: none;
+
+
+}
+
+
+
+#botonb2 a {
+    color: aliceblue;
+    background-color: rgb(13, 65, 148);
+    padding: 10px 15px;
+    text-align: center;
+
+}
+
+#banner1 section {
+
+    position: relative;
+    margin-left: 2%;
+    width: 35%;
+    height: 400px;
+    min-height: 95px;
+    align-items: center;
+    text-align: center;
+
+}
+
+#banner1 img {
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+#banner1 h2 {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7vw;
+
+}
+
+#banner1 h4 {
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+
+#registrador {
+    width: 65%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px 25px;
+    background-color: rgb(13, 65, 148);
+    color: rgb(255, 255, 255);
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 621px) and (max-width: 1025px) {
+
+    .section h3 {
+        margin: auto;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vw;
+        margin: 30px 0px 5px 0px;
+
+    }
+
+
+#sec1 .section1 div {
+    padding: 30px 15px;
+    color: aliceblue;
+    margin: 1%;
+    float: left;
+    width: 45%;
+    height: 230px;
+}
+
+#sec1 {
+    background-color: rgb(13, 65, 148);
+    width: 100%;
+    height: 1030px;
+    margin: auto;
+    text-align: center;
+}
+
+.headers {
+    padding: 0%;
+    margin: 0px;
+    background-color: aquamarine;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+
+#banner2 {
+    position: absolute;
+    margin-top:30px;
+    width: 100%;
+    height: 400px;
+    margin-left: 50px;
+}
+
+#heder2{
+    background-image: url(../../img/Banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: blue;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+
+}
+
+
+/*PAGINA RESPONSIVE CELULARES */
+@media (max-width: 696px) {
+
+    .headers {
+        display: none;
+    }
+
+    .headers1 {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #hed1 #banner1 {
+        position: absolute;
+        margin-top: 250px;
+        display: block;
+        margin-left: 0%;
+        width: 100%;
+
+    }
+
+    .section {
+        padding: 30px;
+        display: block;
+        text-align: center;
+    }
+
+
+    .section h3 {
+        margin: auto;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 5vw;
+        color: rgb(13, 65, 148);
+        text-transform: uppercase;
+    }
+
+
+    #sec1 {
+        display: none;
+
+    }
+
+
+    #secslider {
+        display: block;
+
+    }
+
+    .slider {
+        background-color: rgb(13, 65, 148);
+        width: 100%;
+        height: 290px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 500%;
+
+        animation: cambio 20s infinite alternate linear;
+    }
+
+    .slider li {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        list-style: none;
+    }
+
+    .slider li h3 {
+        padding: 10px;
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 4vw;
+
+    }
+
+    .slider li p {
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3vw;
+
+    }
+
+
+    .slider img {
+        width: 50%;
+        padding: 10px;
+    }
+
+    @keyframes cambio {
+        0% {
+            margin-left: 0;
+        }
+
+        20% {
+            margin-left: 0;
+        }
+
+        25% {
+            margin-left: -100%;
+        }
+
+        45% {
+            margin-left: -100%;
+        }
+
+        50% {
+            margin-left: -200%;
+        }
+
+        70% {
+            margin-left: -200%;
+        }
+
+        75% {
+            margin-left: -300%;
+        }
+
+        100% {
+            margin-left: -300%;
+        }
+    }
+
+    .headers2 {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #banner2 {
+        position: absolute;
+        display: flex;
+        margin-top: 230px;
+        width: 100%;
+        height: 400px;
+        margin-left: 100px;
+    }
+
+
+    #boton2 a {
+        display: block;
+        text-align: center;
+
+    }
+     }
