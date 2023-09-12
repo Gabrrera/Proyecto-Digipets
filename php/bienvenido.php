@@ -55,7 +55,7 @@
         <li ><a href="../servicios.html">servicios</a></li>
         <li ><a href="../Planes.html">Planes</a></li>
         <li><a  href="../Donaciones.html">Donaciones</a></li> 
-        <li ><a href="../PetShop.html">PetShop</a></li>
+        <li ><a href="/petshop.php">PetShop</a></li>
         <li><a href="ReporteUsuarios.php" class="btn-small blue z-depth-2">Reporte</a></li>
     </ul>
     <!--GIF DE CASA COMPRAS-->
