@@ -37,7 +37,7 @@
 </head>
 <body>
 <!--  ENCABEZADO DE LA PAGINA -->
-<nav >
+<nav id="nav1">
         
     <!--ICONO DE MENU HAMBURGUESA-->
     <input type="checkbox" id="check">
