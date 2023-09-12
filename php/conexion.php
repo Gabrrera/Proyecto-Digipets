@@ -2,7 +2,7 @@
 //Configuracion necesaria para acceder a la base de datos
 
 function conn(){
-   $hostname = "190.60.234.19";
+   $hostname = "localhost";
    $usuariodb = "edigipee8_Admin";
    $passworddb = "euxdalyjze25691";
    $dbname = "edigipee8_Digipets"; 
