@@ -51,7 +51,7 @@
     <!--ELEMENTOS DEL MENU -->
     <ul class="lista" id="l2">
         <li ><a href=""><img src="../gif/search.gif" class="lupa"  alt="" ></a></li> <!--GIF DE LUPA-->
-        <li><a  href="Solicitarcita.php">Solicitar cita</a></li> 
+        <li><a  href="procesarCita.php">Solicitar cita</a></li> 
         <li ><a href="../servicios.html">servicios</a></li>
         <li ><a href="../Planes.html">Planes</a></li>
         <li><a  href="../Donaciones.html">Donaciones</a></li> 
