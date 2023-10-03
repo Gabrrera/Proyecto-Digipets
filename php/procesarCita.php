@@ -23,13 +23,7 @@ $idEspecialista = $especialistas[array_rand($especialistas)];
 // Prepara la consulta SQL para insertar la cita en la base de datos
 $sql = "INSERT INTO citas (NombreCliente, Email, FechaConsulta, idEspecialista)
         VALUES ('$nombreCliente', '$email', '$fechaConsulta', '$idEspecialista')";
-        if ($conectar->query($sql) === TRUE) {
-            $mensaje = "Cita agendada correctamente";
-            $esExito = true;
-        } else {
-            $mensaje = "Error al agendar la cita: " . $conectar->error;
-            $esExito = false;
-        }
+
 ?>
 
 <!DOCTYPE html>
