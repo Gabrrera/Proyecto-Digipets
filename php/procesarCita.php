@@ -1,3 +1,15 @@
+<?php
+// Conexión a base de datos
+    include 'conexion.php';
+    $conectar=conn();
+
+// Verifica la conexión
+if ($conectar->connect_error) {
+    die("Error en la conexión a la base de datos: " . $conectar->connect_error);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
