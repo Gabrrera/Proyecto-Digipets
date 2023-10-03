@@ -20,6 +20,9 @@ $especialistas = array("Veterinario 1", "Veterinario 2", "Veterinario 3");
 // Selección de un especialista al azar
 $idEspecialista = $especialistas[array_rand($especialistas)];
 
+// Prepara la consulta SQL para insertar la cita en la base de datos
+$sql = "INSERT INTO citas (NombreCliente, Email, FechaConsulta, idEspecialista)
+        VALUES ('$nombreCliente', '$email', '$fechaConsulta', '$idEspecialista')";
 ?>
 
 <!DOCTYPE html>
