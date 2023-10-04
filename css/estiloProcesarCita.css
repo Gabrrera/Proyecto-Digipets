@@ -82,20 +82,6 @@ button {
 }
 
 
-/* Estilo de confirmación de cita*/
-.confirmacion-cita {
-    background-color: #4CAF50; 
-    color: white;
-    padding: 10px;
-}
-
-/* Estilo para el error */
-.error-cita {
-    background-color: #FF5733; 
-    color: white; 
-    padding: 10px;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     #navProgramarCita {

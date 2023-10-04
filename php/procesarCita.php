@@ -16,26 +16,12 @@ $idEspecialista = $_POST["IdEspecialista"];
 $verificar = mysqli_query($conectar, "SELECT * FROM Citas WHERE Email='$email'");
 
 
+// Lista de especialistas disponibles.
+$especialistas = array("Veterinario 1", "Veterinario 2", "Veterinario 3");
 
-if(mysqli_num_rows($verificar)>0){
-    echo'
-    <script>
-        alert("Por Favor validar la informacion"../procesarCita.php";
-    </script>
-    ';
-    exit;
-  }else{
-    $sql="INSERT INTO Citas (NombreCliente, Email, FechaConsulta, IdEspecialista)
-    VALUES ('$nombreCliente','$email','$fechaConsulta','$idEspecialista')";
-    $resul = mysqli_query($conectar, $sql) or trigger_error("Query Failed! SQL - Error: ".mysql_error($conectar), E_USER_ERROR);
+// Selección de un especialista al azar
+$idEspecialista = $especialistas[array_rand($especialistas)];
 
-    echo'
-    <script>
-        alert("Cita agendada correctamente"../index.html";
-    </script>
-    ';
-    exit;
-  }
 
 ?>
 
