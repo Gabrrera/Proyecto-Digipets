@@ -22,26 +22,6 @@ $especialistas = array("Veterinario 1", "Veterinario 2", "Veterinario 3");
 // Selección de un especialista al azar
 $idEspecialista = $especialistas[array_rand($especialistas)];
 
-if(mysqli_num_rows($verificar)>0){
-    echo'
-    <script>
-        alert("Por Favor validar la informacion"../procesarCita.php";
-    </script>
-    ';
-    exit;
-  }else{
-    $sql="INSERT INTO Citas (NombreCliente, Email, FechaConsulta, IdEspecialista)
-    VALUES ('$nombreCliente','$email','$fechaConsulta','$idEspecialista')";
-    $resul = mysqli_query($conectar, $sql) or trigger_error("Query Failed! SQL - Error: ".mysql_error($conectar), E_USER_ERROR);
-
-    echo'
-    <script>
-        alert("Cita agendada correctamente"../index.html";
-    </script>
-    ';
-    exit;
-  }
-
 ?>
 
 <!DOCTYPE html>
