@@ -13,7 +13,6 @@ $nombreCliente = $_POST["NombreCliente"];
 $email = $_POST["Email"];
 $fechaConsulta = $_POST["FechaConsulta"];
 $idEspecialista = $_POST["IdEspecialista"];
-$verificar = mysqli_query($conectar, "SELECT * FROM Citas WHERE Email='$email'");
 
 
 // Lista de especialistas disponibles.
