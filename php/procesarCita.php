@@ -1,26 +1,28 @@
 <?php
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 // Conexión a base de datos
     include 'conexion.php';
 
-// Verifica la conexión
-if ($conectar->connect_error) {
-    die("Error en la conexión a la base de datos: " . $conectar->connect_error);
-}
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Recibe los datos del formulario
-    $nombreCliente = $_POST["NombreCliente"];
-    $email = $_POST["Email"];
-    $fechaConsulta = $_POST["FechaConsulta"];
-    
-    // Lista de especialistas disponibles.
-    $especialistas = array("Veterinario 1", "Veterinario 2", "Veterinario 3");
 
-    // Selección de un especialista al azar
-    $idEspecialista = $especialistas[array_rand($especialistas)];
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        // Recibe los datos del formulario
+        $nombreCliente = $_POST["NombreCliente"];
+        $email = $_POST["Email"];
+        $fechaConsulta = $_POST["FechaConsulta"];
 
-    // Conecta a la base de datos
-    $conexion = conn();
+
+// Lista de especialistas disponibles.
+$especialistas = array("Veterinario 1", "Veterinario 2", "Veterinario 3");
+
+// Selección de un especialista al azar
+$idEspecialista = $especialistas[array_rand($especialistas)];
+
+// Conecta a la base de datos
+$conexion = conn();
 
     // Verifica la conexión
     if (!$conexion) {
@@ -45,9 +47,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $conexion->close();
 }
 ?>
-?>
 
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
