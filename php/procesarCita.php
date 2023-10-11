@@ -7,7 +7,6 @@ error_reporting(E_ALL);
 session_start();
 $_SESSION["usuario"] = "nombre_cliente"; 
 
-session_start();
 if (isset($_SESSION["usuario"])) {
     echo strtoupper($_SESSION["usuario"]);
 } else {
