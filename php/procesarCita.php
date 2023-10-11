@@ -3,10 +3,11 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+// Inicia la sesión
+session_start();
+
 // Conexión a base de datos
     include 'conexion.php';
-
-
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Recibe los datos del formulario
