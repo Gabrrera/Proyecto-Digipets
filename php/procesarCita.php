@@ -21,6 +21,16 @@ $especialistas = array("Veterinario 1", "Veterinario 2", "Veterinario 3");
 // Selección de un especialista al azar
 $idEspecialista = $especialistas[array_rand($especialistas)];
 
+$sql = "INSERT INTO citas (nombre_cliente, email, fecha_consulta) VALUES ('$nombreCliente', '$email', '$fechaConsulta')";
+
+if ($conexion->query($sql) === TRUE) {
+    echo "Cita agendada con éxito. ¡Gracias!";
+} else {
+    echo "Error al agendar la cita: " . $conexion->error;
+}
+
+$conexion->close();  
+?>
 
 ?>
 
