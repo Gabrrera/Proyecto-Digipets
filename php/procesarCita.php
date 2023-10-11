@@ -1,35 +1,50 @@
 <?php
 // Conexión a base de datos
     include 'conexion.php';
-    $conectar=conn();
 
 // Verifica la conexión
 if ($conectar->connect_error) {
     die("Error en la conexión a la base de datos: " . $conectar->connect_error);
 }
 
-// Recibe los datos del formulario
-$nombreCliente = $_POST["NombreCliente"];
-$email = $_POST["Email"];
-$fechaConsulta = $_POST["FechaConsulta"];
-$idEspecialista = $_POST["IdEspecialista"];
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Recibe los datos del formulario
+    $nombreCliente = $_POST["NombreCliente"];
+    $email = $_POST["Email"];
+    $fechaConsulta = $_POST["FechaConsulta"];
+    
+    // Lista de especialistas disponibles.
+    $especialistas = array("Veterinario 1", "Veterinario 2", "Veterinario 3");
 
+    // Selección de un especialista al azar
+    $idEspecialista = $especialistas[array_rand($especialistas)];
 
-// Lista de especialistas disponibles.
-$especialistas = array("Veterinario 1", "Veterinario 2", "Veterinario 3");
+    // Conecta a la base de datos
+    $conexion = conn();
 
-// Selección de un especialista al azar
-$idEspecialista = $especialistas[array_rand($especialistas)];
+    // Verifica la conexión
+    if (!$conexion) {
+        die("Error en la conexión a la base de datos: " . mysqli_connect_error());
+    }
 
-$sql = "INSERT INTO citas (nombre_cliente, email, fecha_consulta) VALUES ('$nombreCliente', '$email', '$fechaConsulta')";
+    // Query SQL para insertar la cita
+    $sql = "INSERT INTO citas (nombre_cliente, email, fecha_consulta, id_especialista) VALUES (?, ?, ?, ?)";
 
-if ($conexion->query($sql) === TRUE) {
-    echo "Cita agendada con éxito. ¡Gracias!";
-} else {
-    echo "Error al agendar la cita: " . $conexion->error;
+    // Prepara la consulta
+    $stmt = $conexion->prepare($sql);
+    $stmt->bind_param("sssi", $nombreCliente, $email, $fechaConsulta, $idEspecialista);
+
+    // Ejecuta la consulta
+    if ($stmt->execute()) {
+        echo "Cita agendada con éxito. ¡Gracias!";
+    } else {
+        echo "Error al agendar la cita: " . $conexion->error;
+    }
+
+    // Cierra la conexión a la base de datos
+    $conexion->close();
 }
-
-$conexion->close();  
+?>
 ?>
 
 ?>
