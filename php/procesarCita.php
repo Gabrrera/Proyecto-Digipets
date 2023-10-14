@@ -27,7 +27,7 @@ if (isset($_SESSION["usuario"])) {
 // Lista de especialistas disponibles.
 $especialistas = array("Veterinario 1", "Veterinario 2", "Veterinario 3");
 
-// Selección de un especialista al azar
+// Especialista al azar
 $idEspecialista = $especialistas[array_rand($especialistas)];
 
 // Conecta a la base de datos
