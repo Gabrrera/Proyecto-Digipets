@@ -39,7 +39,7 @@ $conexion = conn();
     }
 
     // Query SQL para insertar la cita
-    $sql = "INSERT INTO Citas (nombre_cliente, email, fecha_consulta, id_especialista) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO Citas (NombreCliente, Email, FechaConsulta, IdEspecialista) VALUES (?, ?, ?, ?)";
 
     // Prepara la consulta
     $stmt = $conexion->prepare($sql);
