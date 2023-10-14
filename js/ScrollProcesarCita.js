@@ -66,6 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
         mensajeExito.style.display = "block";
     }
 
+    function ocultarMensajeExito() {
+        mensajeExito.style.display = "none";
+    }    
+
     var form = document.querySelector('form');
     form.addEventListener('submit', function (e) {
         e.preventDefault(); 
@@ -74,5 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
      if (exito) {
             mostrarMensajeExito();}
+            setTimeout(ocultarMensajeExito, 5000);
     });
 });

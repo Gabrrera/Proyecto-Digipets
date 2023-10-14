@@ -113,23 +113,17 @@ button {
 /*CONFIRMACION Y ERROR CITA*/
 
 .mensaje-exito {
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 10px; /* Espaciado interno */
-    position: fixed; /* Posición fija para que se pueda mover */
-    top: 10px; /* Posición en la parte superior */
-    right: 10px; /* Posición en la esquina superior derecha */
-    z-index: 9999; /* Capa superior */
-    display: none; /* Inicialmente oculto */
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 10px; /* Espaciado interno */
-    position: fixed; /* Posición fija para que se pueda mover */
-    top: 10px; /* Posición en la parte superior */
-    right: 10px; /* Posición en la esquina superior derecha */
-    z-index: 9999; /* Capa superior */
-    display: none; /* Inicialmente oculto */
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    display: none; 
 }
+
 
 /*ESTILO NAVEGADOR*/
 
