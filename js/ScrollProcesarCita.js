@@ -57,4 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
         easing: 'ease-in-out',
         reset: true
     });
+
+    document.getElementById("mensajeExito").style.display = "block";
+    document.getElementById("mensajeExito").style.display = "none";
+
 });

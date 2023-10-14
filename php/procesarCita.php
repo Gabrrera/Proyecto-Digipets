@@ -140,6 +140,7 @@ $conexion = conn();
                 <button type="submit">Agendar Cita</button>
             </form>
         </div> 
+        <div id="mensajeExito" class="mensaje-exito">Cita agendada con éxito. ¡Gracias!</div>
     </nav>
               
     

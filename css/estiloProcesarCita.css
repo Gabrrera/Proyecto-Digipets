@@ -112,20 +112,24 @@ button {
 
 /*CONFIRMACION Y ERROR CITA*/
 
-.success-message {
-    background-color: #4CAF50; 
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+.mensaje-exito {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    position: fixed; /* Posición fija para que se pueda mover */
+    top: 10px; /* Posición en la parte superior */
+    right: 10px; /* Posición en la esquina superior derecha */
+    z-index: 9999; /* Capa superior */
+    display: none; /* Inicialmente oculto */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    position: fixed; /* Posición fija para que se pueda mover */
+    top: 10px; /* Posición en la parte superior */
+    right: 10px; /* Posición en la esquina superior derecha */
+    z-index: 9999; /* Capa superior */
+    display: none; /* Inicialmente oculto */
 }
-
-.error-message {
-    background-color: #F44336; 
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 
 /*ESTILO NAVEGADOR*/
 
