@@ -47,9 +47,7 @@ $conexion = conn();
 
     // Ejecuta la consulta
     if ($stmt->execute()) {
-        echo '<script type="text/javascript">
-        var newWindow = window.open("nueva_pagina.html", "_blank");
-        </script>';
+        echo "Cita agendada con éxito. ¡Gracias!";
     } else {
         echo "Error al agendar la cita: " . $conexion->error;
     }
@@ -111,7 +109,7 @@ $conexion = conn();
     
         <ul class="lista8" id="">
     <li> <a href=""><img class="icono" src="../img/configuraciones.png">CONFIGURACION</a></li>
-    <li><a href=""><img class="icono" src="../img/correo.png"><?php echo strtoupper($_SESSION["usuario"]);?></li>
+    <li><a href=""><img class="icono" src="../img/correo.png"></li>
     <li><a href="CerrarSesion.php"><img class="icono" src="../img/sesion.png"> CERRAR SESION </a></li>
     </ul> 
       </article>
