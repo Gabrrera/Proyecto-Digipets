@@ -83,78 +83,6 @@
     
         width: auto;
     }
-    #usuario img{
-        height: 70px;
-        width: auto;
-        background-color: aqua;
-        }
-        
-        
-        #contenedorcompras{
-            top: 95px;
-            z-index: 9;
-            position: fixed;
-            right: 220px;
-            width: 20%;
-            background-color:rgb(13, 65, 148);
-        }
-        #contenedorcompras article{
-            width: 100%;
-            height: 20vh;
-        /*	background: red;*/
-        }
-        
-        #contenedorcompras article div{
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            float: left;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1vw;
-            background-color: aqua;
-        }
-        
-        #contenedorcompras .lista8{
-            padding: 0;
-            margin: 0;
-        
-        }
-        
-        #contenedorcompras .lista8 li {
-            padding: 10px;
-            width: 100%;
-            height: 50px;
-            background-color:rgb(13, 65, 148);
-        
-        
-        }
-        
-        #contenedorcompras .lista8 li {
-            padding: 10px;
-            width: 100%;
-            height: 50px;
-            color: beige;
-            background-color:rgb(13, 65, 148);
-        
-        
-        }
-        
-        #contenedorcompras .lista8 li a{
-        
-        text-align: center;
-        color: beige;
-        margin-bottom: 20px;
-        }
-        
-        #contenedorcompras .lista8 li .icono{
-        
-            width: 30px;
-            height: 30px;
-            margin: 0px 10px;
-        
-        }
-        
-
     /*DESACTIVAR MENU HAMBURGUESA */
     .checkbtn{
         font-size: 30px;
@@ -336,7 +264,8 @@
    
    }    
 
-   #div2{
+/* TEXTO SUPERIOR DE LA PETSHOP  */
+   #PetshopText{
     /* background-color: aqua; */
     padding-top: 10px;
     width: 100%;
@@ -346,58 +275,34 @@
     flex-direction: column;
     text-align: center;
    }
-
-   #div2 p{
+   #PetshopText p{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     padding: 10px 10px 5px 10px;
    }
-
-   #baner3 {
+   #PetshopBanner {
     height: 423px;
    }
+   /* ------------------------------------------------------------------------------ */
+   /* LISTA CATEGORIA IZQUIERDA  */
 
-   #productos{
+   #ListaCategoriasProductos{
     display: flex;
     flex-direction: row;
-
    }
-
-   #list-producto{
+   #ListaCategoria{
     /* background-color: bisque; */
     width: 25%;
     height: 1000px;
     padding: 0%;
-    
-    
    }
-   #listap1 {
+   #serviciocategoria {
     width: 100%;
     padding: 0%;
     display: flex;
     flex-flow: row wrap ;
-    
    }
-
-    .box-ul{
-        padding: 0%;
-        width: 360px;
-        display: flex;
-        flex-flow: row wrap ;
-    }
-   .box-img{
-    height: 40px;
-    width: 40px;
-    padding: 10px 0 0 10px;
-   }
-
-   .box-img img{
-    height: 40px;
-    
-   }
-
-   .boxlp{
-    
+   .CategoriaBox{
     /* background-color: red; */
     margin: 8px;
     width: 280px;
@@ -406,69 +311,70 @@
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     padding-left: 30px;
-    
    }
-
-   .box-ul:hover{
+   #Categoria{
+    font-weight: bold;
+    width: 360px;
+   }
+   .ListaCategoriaBox{
+        padding: 0%;
+        width: 360px;
+        display: flex;
+        flex-flow: row wrap ;
+   }
+   .ListaCategoriaBox:hover{
     background-color: rgb(13, 65, 148);
     color: white;
    }
-
-   #categoria{
-    font-weight: bold;
-    width: 360px;
-    
+   .CategoriaImagen{
+    height: 40px;
+    width: 40px;
+    padding: 10px 0 0 10px;
    }
-
+   .CategoriaImagen img{
+    height: 40px;
+   }
    
+/* ------------------------------------------------------------------------------ */
+/* SECCION DE PRODUCTOS */
 
-
-
-   #img-producto{
+   #ListaProductos{
      /* background-color: blue;  */
     width: 75%;
     height: 1200px;
    }
-
-   #listaimgp{
+   #ContenedorProductos{
     display: flex;
     flex-flow:row wrap;
-
    }
-
-   .boxip{
+   .ProductosBox{
     width: 300px;
     height: 350px;
     /* background-color: violet; */
     margin: 10px;
-    
    }
-
-   .boxip img{
+   .ProductosBox img{
     height: 200px;
      padding-left: 20%;
-    
    }
-
-   .boxip h2{
+   .ProductosBox h2{
     font-size: 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
    }
-
-   .descripcion {
+   .Descripcion {
     font-size: 12px;
     text-align: center;
     margin: 5px;
     font-family: 'Poppins', sans-serif;
    }
-   .precio{
+   .Valor{
     font-size: 20px;
     text-align: center;
     margin: 5px;
     font-family: 'Poppins', sans-serif;
    }
-   .botonc{
+   .AgregarCarrito{
    margin-left: 25%;
    border: 1px solid rgb(13, 65, 148);
    height: 30px;
@@ -477,3 +383,4 @@
    background-color: rgba(0, 0, 0, 0);
    font-size: 15px;
    }
+   /* ------------------------------------------------------------------------------ */

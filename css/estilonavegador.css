@@ -1,3 +1,4 @@
+/* estilo body */
 *{
     text-decoration: none;
     list-style: none;
@@ -6,20 +7,23 @@
     box-sizing: border-box;
     }
 
-nav{
+/* comienza la barra menu */
+#navBarraMenu{
     position: fixed;
 	width: 100%;
 	height: 95px;
 	background-color:rgb(13, 65, 148);
 	z-index: 9;
 }
-nav img {
+/* imagenes barra menu */
+.imgBarraMenu {
     border-radius: 50px;
     width: 50px;
     height: 50px;
 }
 
-nav .lista li{
+/* estilo subdivisiones barra menu */
+.subDivisiones{
     float: left;
     list-style: none;
     min-height: 95px;
@@ -30,37 +34,38 @@ nav .lista li{
     text-transform: uppercase;
 }
 
-nav .lista{
+/* estilo divisiones barra menu  */
+.divisiones{
     float: left;
     margin: 0% 1.5%;
 }
 
-
-#l1{
+/* estilo division uno */
+#divisionUno{
     width: auto;
 }
 
-#l1 img{
+#imgDivisionUno{
     width: 150px;
     height: auto;
     display: block;
     text-align: center;
     border-radius: 0px;
 }
-#l2{
-    
+
+/* estilo division dos*/
+#divisionDos{
     color: azure;
     min-height: 95px;
     display: flex;
     align-items: center;
 }
 
-#l2 img{
+#imgDivisionDos{
     margin-left: 90px;
-    
 }
 
-#l2 li a{
+.redirecDivisionDos{
     color: azure;
     padding: 10px;
     box-sizing: border-box;
@@ -68,24 +73,24 @@ nav .lista{
     text-decoration:none;
 }
 
-#l3{
-
+/* estilo division tres*/
+#divisionTres{
     width: auto;
 }
 
-#boton{
+#btnIniciarSesion{
     padding: 20px 25px;
     text-decoration: none;
     background-color: #ffffff;
     color: rgb(7, 0, 138);
-  
-  }
+}
 
-#l4{
-
+/* estilo division cuatro*/
+#divisionCuatro{
     width: auto;
 }
-/*DESACTIVAR MENU HAMBURGUESA */
+
+/* DESACTIVAR MENU HAMBURGUESA */
 .checkbtn{
     font-size: 30px;
     color: #ffffff;
@@ -103,25 +108,25 @@ nav .lista{
 /*PAGINA RESPONSIVE TABLETS */
 @media (max-width: 1025px){
     
- #l1{
+ #divisionUno{
      padding-left: 0%;
      margin-left: 0%;
      }
- ul #lista .l1{
+ ul #lista .divisionUno{
      font-size: 20px;
  }
- #l2 img{
+ #divisionDos img{
      padding-left:0px;
      margin-left: 0px;
  }
- #l2{
+ #divisionDos{
      padding-left:0px;
      margin-left: 0px;
  }
- #l3{
+ #divisionTres{
      padding-left:0px;
  }
- #l4{
+ #divisionCuatro{
      display: none;
  }
 }
@@ -133,18 +138,15 @@ nav .lista{
  .checkbtn{
          display: block;
      }
- #l3{
+ #divisionTres{
      display: none;
  }
- .lupa{
-     display: none;
-     margin: 0;
- }
- #l1 img{
+ 
+ #divisionUno img{
      width: 120px;
      height: auto;
  }
- #l2{    
+ #divisionDos{    
      position: fixed;
      width: 100%;
      height: 100vh;
@@ -157,23 +159,23 @@ nav .lista{
      flex-direction: column;
  }
  
- #l2 li{
+ #divisionDos li{
      display: block;
      margin: 10px 0;
      height: 50px;
      min-height: 0px;
  }
- #l2 li a{
+ #divisionDos li a{
      font-size: 20px;
      height: 100%;
  }
- #check:checked ~ #l2{
+ #check:checked ~ #divisionDos{
      right: 0;
  }
  
 }
 
-------------------------------------------------------------------------------------------
+/* ------------------------------------------------------------------------------------------
 
 
 .btn-open-popup{top: 0;
@@ -329,41 +331,29 @@ nav .lista{
     border-radius: 50%;
     line-height: 10px;
 }
+----------------------------------------- */
+/* FOOTER */
 
-
-
------------------------------------------
-
--------------------------------------
  #foopets{
     background-color: rgb(255, 0, 0);
     width: 100%;
     height: 200px;
-
 }
-
-
  #foopets div{
-    
     text-align: center;
 	background-color:rgb(13, 65, 148);
     color: whitesmoke;
     float: left;
     width: 25%;
     height: 200px ;
-    
-
 }
-
 #foopets #fooimg{
     margin-top: 30px;
     width: 250px;
 }
-
 .fp1 h3{  
 margin-top: 40px;
 }
-
 .fp1 img{
     background-color: brown;
     width: 70px;
@@ -371,7 +361,6 @@ margin-top: 40px;
     border-radius: 50%;
     border-bottom: rgb(255, 0, 0);
 }
-
 /*--------------------------------*/
 
 @media (max-width: 1025px){
@@ -380,40 +369,27 @@ margin-top: 40px;
         background-color: rgb(255, 0, 0);
         width: 100%;
         height: 400px;
-    
-    }
-    
-    
+    } 
      #foopets div{
-        
         text-align: center;
         background-color:rgb(13, 65, 148);
         color: whitesmoke;
         float: left;
         width: 50%;
-    
     }
-
     .fp1{
-
         width:100%;
     }
-
-
     .fp0{
-
         width:100%;
     }
-    
     #foopets #fooimg{
         margin-top: 30px;
         width: 200px;
     }
-    
     .fp1 h3{  
     margin-top: 40px;
     }
-    
     .fp1 img{
         background-color: brown;
         width: 70px;
@@ -421,6 +397,4 @@ margin-top: 40px;
         border-radius: 50%;
         border-bottom: rgb(255, 0, 0);
     }
-
-
 }
