@@ -58,7 +58,21 @@ document.addEventListener("DOMContentLoaded", function () {
         reset: true
     });
 
-    document.getElementById("mensajeExito").style.display = "block";
-    document.getElementById("mensajeExito").style.display = "none";
+    // Ocultar el mensaje de éxito al principio
+    var mensajeExito = document.getElementById("mensajeExito");
+    mensajeExito.style.display = "none";
 
+    function mostrarMensajeExito() {
+        mensajeExito.style.display = "block";
+    }
+
+    var form = document.querySelector('form');
+    form.addEventListener('submit', function (e) {
+        e.preventDefault(); 
+
+    var exito = true;
+
+     if (exito) {
+            mostrarMensajeExito();}
+    });
 });
