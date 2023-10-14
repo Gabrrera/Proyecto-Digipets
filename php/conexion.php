@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 function conn(){
    $hostname = "localhost";
-   $usuariodb = "edigipee8_Admin";
+   $usuariodb = "edigipee8_QA";
    $passworddb = "euxdalyjze25691";
    $dbname = "edigipee8_Digipets_QA"; 
 
