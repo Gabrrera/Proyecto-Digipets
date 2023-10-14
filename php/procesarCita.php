@@ -47,7 +47,9 @@ $conexion = conn();
 
     // Ejecuta la consulta
     if ($stmt->execute()) {
-        echo "Cita agendada con éxito. ¡Gracias!";
+        echo '<script type="text/javascript">
+        var newWindow = window.open("nueva_pagina.html", "_blank");
+        </script>';
     } else {
         echo "Error al agendar la cita: " . $conexion->error;
     }
