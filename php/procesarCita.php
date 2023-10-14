@@ -45,12 +45,6 @@ $conexion = conn();
     $stmt = $conexion->prepare($sql);
     $stmt->bind_param("sssi", $nombreCliente, $email, $fechaConsulta, $idEspecialista);
 
-    // Ejecuta la consulta
-    if ($stmt->execute()) {
-        echo "Cita agendada con éxito. ¡Gracias!";
-    } else {
-        echo "Error al agendar la cita: " . $conexion->error;
-    }
 
     // Cierra la conexión a la base de datos
     $conexion->close();
