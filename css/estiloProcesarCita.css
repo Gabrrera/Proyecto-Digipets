@@ -110,6 +110,22 @@ button {
     }
 }
 
+/*CONFIRMACION Y ERROR CITA*/
+
+.success-message {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error-message {
+    background-color: #F44336; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 
 /*ESTILO NAVEGADOR*/
 
