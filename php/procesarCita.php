@@ -8,7 +8,7 @@ session_start();
 $_SESSION["usuario"] = "usuario"; 
 
 if (isset($_SESSION["usuario"])) {
-    echo strtoupper($_SESSION["usuario"]);
+    strtoupper($_SESSION["usuario"]);
 } else {
     echo "Usuario no definido"; 
 }
