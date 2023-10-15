@@ -1,0 +1,125 @@
+/* TEXTO SUPERIOR DE LA PETSHOP  */
+   #PetshopText{
+    /* background-color: aqua; */
+    padding-top: 10px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   }
+   #PetshopText p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 10px 10px 5px 10px;
+   }
+   #PetshopBanner {
+    height: 423px;
+   }
+   /* ------------------------------------------------------------------------------ */
+   /* LISTA CATEGORIA IZQUIERDA  */
+
+   #ListaCategoriasProductos{
+    display: flex;
+    flex-direction: row;
+   }
+   #ListaCategoria{
+    /* background-color: bisque; */
+    width: 25%;
+    height: 1000px;
+    padding: 0%;
+   }
+   #serviciocategoria {
+    width: 100%;
+    padding: 0%;
+    display: flex;
+    flex-flow: row wrap ;
+   }
+   .CategoriaBox{
+    /* background-color: red; */
+    margin: 8px;
+    width: 280px;
+    height: 40px;
+    line-height: 45px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 30px;
+   }
+   .CategoriaBox a{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    
+   }
+   #Categoria{
+    font-weight: bold;
+    width: 360px;
+   }
+   .ListaCategoriaBox{
+        padding: 0%;
+        width: 360px;
+        display: flex;
+        flex-flow: row wrap ;
+   }
+   .ListaCategoriaBox:hover{
+    background-color: rgb(13, 65, 148);
+    color: white;
+   }
+   .CategoriaImagen{
+    height: 40px;
+    width: 40px;
+    padding: 10px 0 0 10px;
+   }
+   .CategoriaImagen img{
+    height: 40px;
+   }
+   
+/* ------------------------------------------------------------------------------ */
+/* SECCION DE PRODUCTOS */
+
+   #ListaProductos{
+     /* background-color: blue;  */
+    width: 75%;
+    height: 1200px;
+   }
+   #ContenedorProductos{
+    display: flex;
+    flex-flow:row wrap;
+   }
+   .ProductosBox{
+    width: 300px;
+    height: 350px;
+    /* background-color: violet; */
+    margin: 10px;
+   }
+   .ProductosBox img{
+    height: 200px;
+     padding-left: 20%;
+   }
+   .ProductosBox h2{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+   }
+   .Descripcion {
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+   }
+   .Valor{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+   }
+   .AgregarCarrito{
+   margin-left: 25%;
+   border: 1px solid rgb(13, 65, 148);
+   height: 30px;
+   color: rgb(13, 65, 148);
+   font-family: 'Poppins', sans-serif;
+   background-color: rgba(0, 0, 0, 0);
+   font-size: 15px;
+   }
+   /* ------------------------------------------------------------------------------ */

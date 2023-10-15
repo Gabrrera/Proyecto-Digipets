@@ -1,0 +1,65 @@
+/* FOOTER */
+
+#foopets{
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    height: 200px;
+}
+ #foopets div{
+    text-align: center;
+	background-color:rgb(13, 65, 148);
+    color: whitesmoke;
+    float: left;
+    width: 25%;
+    height: 200px ;
+}
+#foopets #fooimg{
+    margin-top: 30px;
+    width: 250px;
+}
+.fp1 h3{  
+margin-top: 40px;
+}
+.fp1 img{
+    background-color: brown;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-bottom: rgb(255, 0, 0);
+}
+/*--------------------------------*/
+@media (max-width: 1025px){
+
+    #foopets{
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+        height: 400px;
+    } 
+     #foopets div{
+        text-align: center;
+        background-color:rgb(13, 65, 148);
+        color: whitesmoke;
+        float: left;
+        width: 50%;
+    }
+    .fp1{
+        width:100%;
+    }
+    .fp0{
+        width:100%;
+    }
+    #foopets #fooimg{
+        margin-top: 30px;
+        width: 200px;
+    }
+    .fp1 h3{  
+    margin-top: 40px;
+    }
+    .fp1 img{
+        background-color: brown;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border-bottom: rgb(255, 0, 0);
+    }
+}

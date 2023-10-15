@@ -1,0 +1,400 @@
+/* estilo body */
+*{
+    text-decoration: none;
+    list-style: none;
+    margin:0;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    }
+
+/* comienza la barra menu */
+#navBarraMenu{
+    position: fixed;
+	width: 100%;
+	height: 95px;
+	background-color:rgb(13, 65, 148);
+	z-index: 9;
+}
+/* imagenes barra menu */
+.imgBarraMenu {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+/* estilo subdivisiones barra menu */
+.subDivisiones{
+    float: left;
+    list-style: none;
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+/* estilo divisiones barra menu  */
+.divisiones{
+    float: left;
+    margin: 0% 1.5%;
+}
+
+/* estilo division uno */
+#divisionUno{
+    width: auto;
+}
+
+#imgDivisionUno{
+    width: 150px;
+    height: auto;
+    display: block;
+    text-align: center;
+    border-radius: 0px;
+}
+
+/* estilo division dos*/
+#divisionDos{
+    color: azure;
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+}
+
+#imgDivisionDos{
+    margin-left: 90px;
+}
+
+.redirecDivisionDos{
+    color: azure;
+    padding: 10px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration:none;
+}
+
+/* estilo division tres*/
+#divisionTres{
+    width: auto;
+}
+
+#btnIniciarSesion{
+    padding: 20px 25px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: rgb(7, 0, 138);
+}
+
+/* estilo division cuatro*/
+#divisionCuatro{
+    width: auto;
+}
+
+/* DESACTIVAR MENU HAMBURGUESA */
+.checkbtn{
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 95px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+ 
+#check{
+     display: none;
+}
+/*FIN DESACTIVAR MENU */
+/*PAGINA RESPONSIVE TABLETS */
+@media (max-width: 1025px){
+    
+ #divisionUno{
+     padding-left: 0%;
+     margin-left: 0%;
+     }
+ ul #lista .divisionUno{
+     font-size: 20px;
+ }
+ #divisionDos img{
+     padding-left:0px;
+     margin-left: 0px;
+ }
+ #divisionDos{
+     padding-left:0px;
+     margin-left: 0px;
+ }
+ #divisionTres{
+     padding-left:0px;
+ }
+ #divisionCuatro{
+     display: none;
+ }
+}
+/*PAGINA RESPONSIVE CELULARES */
+@media only screen and (max-width: 480px) {
+
+
+
+ .checkbtn{
+         display: block;
+     }
+ #divisionTres{
+     display: none;
+ }
+ 
+ #divisionUno img{
+     width: 120px;
+     height: auto;
+ }
+ #divisionDos{    
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background-color:rgb(9, 47, 108) ;
+     top: 95px;
+     right: -100%;
+     text-align: center;
+     transition: all .5s;
+     margin-right: 0px;
+     flex-direction: column;
+ }
+ 
+ #divisionDos li{
+     display: block;
+     margin: 10px 0;
+     height: 50px;
+     min-height: 0px;
+ }
+ #divisionDos li a{
+     font-size: 20px;
+     height: 100%;
+ }
+ #check:checked ~ #divisionDos{
+     right: 0;
+ }
+ 
+}
+
+/* ------------------------------------------------------------------------------------------
+
+
+.btn-open-popup{top: 0;
+	text-align: center;
+	width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: block;
+	background-color:rgb(13, 65, 148);
+    padding: 10px 5px;
+    border-radius: 50px;
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+}
+
+
+.btn-open-popup1{top: 0;
+	text-align: center;
+	width: 70%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: block;
+	background-color:rgb(13, 65, 148);
+    padding: 10px 5px;
+    border-radius: 50px;
+    font-size:1.5vw;
+}
+
+
+.container-all{ 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+
+
+.container-all:target{
+	top: 0;
+	position: fixed;
+	z-index: 10;
+	height: 100%;
+	width: 100%;
+    background: rgba(0,0,0,0.7);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.container-all:target .popup{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    visibility: visible;
+}
+
+
+.popup{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    position: fixed;
+    display: flex;
+    	background-color: white;
+    visibility: hidden;
+    top: -80%;
+    left: -80%;
+    transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;
+}
+
+.img{
+    width: 50%;
+    background-image: url(../../img/imagen11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-text{
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+
+.container-text h1{
+	text-align: center;
+	    margin-top: 20px;
+    font-size: 20px;
+}
+
+.container-text p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+ #botoni input {
+	width: 150px;
+	background-color:rgb(13, 65, 148);
+	text-align: center;
+	margin: auto;
+	display: block;
+	color: rgb(119, 40, 40);
+	padding: 15px 0 ;
+	border-radius: 50px;
+	margin-top: 10px;
+}
+
+
+.container-text input{
+	margin: auto;
+	display: block;
+	width: 90%;
+	height: 30px;
+}
+.container-text label{
+	margin-left: 5%;
+}
+
+.container-text h1{
+	padding: 0px 0px 20px 0px;
+}
+
+.container-text p{
+	text-align: center;
+}
+
+.container-text div {
+	text-align: center;
+}
+ #inicio h1{
+	    padding-bottom: 45px;
+}
+
+.btn-close-popup{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+}
+----------------------------------------- */
+/* FOOTER */
+
+ #foopets{
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    height: 200px;
+}
+ #foopets div{
+    text-align: center;
+	background-color:rgb(13, 65, 148);
+    color: whitesmoke;
+    float: left;
+    width: 25%;
+    height: 200px ;
+}
+#foopets #fooimg{
+    margin-top: 30px;
+    width: 250px;
+}
+.fp1 h3{  
+margin-top: 40px;
+}
+.fp1 img{
+    background-color: brown;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-bottom: rgb(255, 0, 0);
+}
+/*--------------------------------*/
+
+@media (max-width: 1025px){
+
+    #foopets{
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+        height: 400px;
+    } 
+     #foopets div{
+        text-align: center;
+        background-color:rgb(13, 65, 148);
+        color: whitesmoke;
+        float: left;
+        width: 50%;
+    }
+    .fp1{
+        width:100%;
+    }
+    .fp0{
+        width:100%;
+    }
+    #foopets #fooimg{
+        margin-top: 30px;
+        width: 200px;
+    }
+    .fp1 h3{  
+    margin-top: 40px;
+    }
+    .fp1 img{
+        background-color: brown;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border-bottom: rgb(255, 0, 0);
+    }
+}

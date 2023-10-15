@@ -1,0 +1,282 @@
+/*ESTILO INDEX ---------------------------------------------------------------*/
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+}
+
+/* PROMOCION ENCIMA DE BANNER Y BANNER */
+
+#imgBannerPrincipalPequeña {
+    display: none;
+}
+#bannerPrincipalyPromo {
+    width: 100%;
+    height: 100%;
+}
+#bannerPromocion {
+    position: absolute;
+    margin-top: 9%;
+    display: block;
+    margin-left: 70%;
+    width: 30%;
+    height: 450px;
+    display: block;
+    text-align: center;
+}
+#bannerPromocion img {
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+#bannerPromocion h4 {
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#bannerPromocion h2 {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7vw;
+}
+#btnPromocion {
+    width: 80%;
+    position: relative;
+    top: 30px;
+    margin-top: 30px;
+    background-color: rgb(13, 65, 148);
+    padding: 10px 15px;
+    color: azure;
+}
+#imgBannerPrincipalGrande {
+    background-color: aquamarine;
+    width: 100%;
+    height: 550px;
+    position: relative;
+    z-index: -1;
+}
+/* ------------------------------------------------------------------------------ */
+/* APARTADO DE SERVICIOS */
+
+#apartadoServicios {
+    padding: 50px;
+}
+#apartadoServicios h3 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5vw;
+    margin: 30px 0px 5px 0px;
+    text-transform: uppercase;
+}
+#apartadoServicios p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1, 5vw;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* TODAS LAS CATEGORIAS APARTADO SERVICIOS */
+
+#apartadoCategoriaServicios {
+    background-color: rgb(13, 65, 148);
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    text-align: center;
+}
+.categoriasServicios div {
+    padding: 30px 0px;
+    color: aliceblue;
+    margin: 1%;
+    float: left;
+    width: 23%;
+}
+.categoriasServicios div img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px 5px 0px;
+}
+#apartadoCategoriasSlider {
+    display: none;
+}
+/* ------------------------------------------------------------------------------ */
+
+/* FORMULARIO REGISTRO (BANNER SECUNDARIO) */
+
+#formRegistroBanner {
+    position: absolute;
+    display: flex;
+    margin-top: 180px;
+    height: 400px;
+    margin-left: 150px;
+}
+#headerImagenBannerSecundario{
+    width: 1480px;
+}
+#imgBannerSecundario{   
+    width: 1480px;
+}
+#imgBannerSecundarioResp {
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+/*PAGINA RESPONSIVE TABLETS */
+@media screen and (min-width: 621px) and (max-width: 1025px) {
+
+    #apartadoCategoriaServicios {
+        background-color: rgb(13, 65, 148);
+        width: 100%;
+        height: 1030px;
+        margin: auto;
+        text-align: center;
+    }
+    .categoriasServicios div {
+        padding: 30px 15px;
+        color: aliceblue;
+        margin: 1%;
+        float: left;
+        width: 45%;
+        height: 230px;
+    }
+    #apartadoServicios h3 {
+        margin: auto;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vw;
+        margin: 30px 0px 5px 0px;
+    }
+    #formRegistroBanner {
+        position: absolute;
+        margin-top:30px;
+        width: 100%;
+        height: 400px;
+        margin-left: 50px;
+    }
+    #headerImagenBannerSecundario{
+        width: 1440px;
+        height: auto;
+    }
+    #imgBannerSecundario {
+        padding: 0%;
+        margin: 0px;
+        background-color: aquamarine;
+        width: 80%;
+        height: auto;
+        z-index: -1; 
+        width: 1440px;
+        height: auto;  
+    }
+}
+/* ------------------------------------------------------------------------------ */
+
+/*PAGINA RESPONSIVE CELULARES */
+@media (max-width: 696px) {
+
+    #bannerPromocion {
+        position: absolute;
+        margin-top: 250px;
+        display: block;
+        margin-left: 0%;
+        width: 100%;
+    }
+    #apartadoServicios {
+        padding: 30px;
+        display: block;
+        text-align: center;
+    }
+    #apartadoCategoriaServicios {
+        display: none;
+    }
+    #apartadoServicios h3 {
+        margin: auto;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 5vw;
+        color: rgb(13, 65, 148);
+        text-transform: uppercase;
+    }
+    #apartadoCategoriasSlider {
+        display: block;
+    }
+    #sliderCategoriasServicios {
+        background-color: rgb(13, 65, 148);
+        width: 100%;
+        height: 290px;
+        margin: auto;
+        overflow: hidden;
+    }
+    #sliderCategoriasServicios ul {
+        display: flex;
+        padding: 0;
+        width: 500%;
+        animation: cambio 20s infinite alternate linear;
+    }
+    #sliderCategoriasServicios li {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        list-style: none;
+    }
+    #sliderCategoriasServicios img {
+        width: 50%;
+        padding: 10px;
+    }
+    #sliderCategoriasServicios li h3 {
+        padding: 10px;
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 4vw;
+    }
+    #sliderCategoriasServicios li p {
+        color: aliceblue;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3vw;
+    }
+    #formRegistroBanner {
+        position: absolute;
+        display: flex;
+        margin-top: 230px;
+        width: 100%;
+        height: 400px;
+    }
+    #imgBannerSecundario {
+        display: none;
+    }
+
+    #imgBannerSecundarioResp {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #imgBannerSecundarioResp {
+        width: 100%;
+        height: 100%;
+    }
+    @keyframes cambio {
+        0% { margin-left: 0;}
+
+        20% {margin-left: 0;}
+
+        25% {margin-left: -100%;}
+
+        45% {margin-left: -100%;}
+
+        50% {margin-left: -200%;}
+
+        70% {margin-left: -200%;}
+
+        75% {margin-left: -300%;}
+
+        100% {margin-left: -300%;}
+    }
+}
+/* ------------------------------------------------------------------------------ */
