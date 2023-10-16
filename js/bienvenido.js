@@ -1,4 +1,4 @@
-const despliegueUsuario = document.getElementById("prueba")
+const despliegueUsuario = document.getElementById("usuarioImg")
 const ocultar=document.getElementById("contenedorUsuario")
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -16,5 +16,19 @@ despliegueUsuario.addEventListener("click",function(){
          console.log("none")
 }})
 
+// ----------------------
 
+const efectohover=document.querySelector('.desplegableopciones')
+const efectohover2=document.querySelector('.desplegableopciones2')
+
+efectohover.addEventListener('mouseover', function() {
+    this.style.backgroundColor = 'white';
+    efectohover2.style.color= 'black';
+});
+
+efectohover.addEventListener('mouseout', function() {
+    this.style.backgroundColor = '';
+    efectohover2.style.color= '';
+    
+});
 

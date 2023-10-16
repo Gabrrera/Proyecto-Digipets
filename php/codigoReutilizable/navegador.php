@@ -27,7 +27,7 @@
 
     <!--LOGO-->
     <ul class="divisiones" id="divisionUno">
-      <li class="subDivisiones"><a href="index.html"><img id="imgDivisionUno" class="imgBarraMenu" src="../img/LOGO-HORIZONTAL.png" alt=""></a></li>
+      <li class="subDivisiones"><a href="bienvenido.php"><img id="imgDivisionUno" class="imgBarraMenu" src="../img/LOGO-HORIZONTAL.png" alt=""></a></li>
     </ul> 
 
     <!--ELEMENTOS DEL MENU -->
@@ -46,7 +46,7 @@
     </ul>
     <!--CERRAR SESION Y NOMBRE-->
     <ul class="subDivisiones" id="divisionUsuario">
-        <li><img id="prueba" src="../img/usuario.png" ></li>
+        <li><img id="usuarioImg" src="../img/usuarioperfil.png" ></li>
     </ul>
 </nav>
 
@@ -54,9 +54,9 @@
   <article>
     <div>
         <ul id="desplegableUsuario">
-            <li><a href=""><img class="desplegablesImagenes" src="../img/configuraciones.png">CONFIGURACION</a></li>
-            <li><a href="#"><img class="desplegablesImagenes" src="../img/correo.png"><?php echo strtoupper($_SESSION["usuario"]);?></li>
-            <li><a href="CerrarSesion.php"><img class="desplegablesImagenes" src="../img/sesion.png"> CERRAR SESION </a></li>
+            <li class="desplegableopciones"><a class="desplegableopciones2" href="#"><img src="../img/configuraciones.png">CONFIGURACION</a></li>
+            <li class="desplegableopciones"><a class="desplegableopciones2" href="#"><img src="../img/correo.png"><?php echo strtoupper($_SESSION["usuario"]);?></a></li>
+            <li class="desplegableopciones"><a class="desplegableopciones2" href="CerrarSesion.php"><img class="desplegablesImagenes" src="../img/sesion.png"> CERRAR SESION </a></li>
         </ul>   
     </div> 
   </article>
