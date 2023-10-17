@@ -54,8 +54,8 @@
   <article>
     <div>
         <ul id="desplegableUsuario">
-            <li class="desplegableopciones"><a class="desplegableopciones2" href="#"><img src="../img/configuraciones.png">CONFIGURACION</a></li>
-            <li class="desplegableopciones"><a class="desplegableopciones2" href="#"><img src="../img/correo.png"><?php echo strtoupper($_SESSION["usuario"]);?></a></li>
+            <li class="desplegableopciones"><a class="desplegableopciones2" href="#"><img src="../img/configuraciones.pn">CONFIGURACION</a></li>
+            <li class="desplegableopciones"><a class="desplegableopciones2" href="#"><img src="../img/correo.pn"><?php echo strtoupper($_SESSION["usuario"]);?></a></li>
             <li class="desplegableopciones"><a class="desplegableopciones2" href="CerrarSesion.php"><img class="desplegablesImagenes" src="../img/sesion.png"> CERRAR SESION </a></li>
         </ul>   
     </div> 

@@ -92,65 +92,67 @@
             <h2 >Lorem ipsum dolor sit amet.</h2>
             <p class="Descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quia.</p>
             <p class="Valor">90.000</p>
-        <button class="AgregarCarrito">AGREGAR AL CARRITO</button>
+        <a href="#" class="AgregarCarrito" data-id="1">AGREGAR AL CARRITO</a>
       </li>
       <li class="ProductosBox">
         <img src="../img/PETSHOP/Nutre-Can.png" alt="">
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p class="Descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quia.</p>
           <p class="Valor">90.000</p>
-        <button class="AgregarCarrito">AGREGAR AL CARRITO</button>
+        <a href="#" class="AgregarCarrito" data-id="2">AGREGAR AL CARRITO</a>
       </li>
       <li class="ProductosBox">
         <img src="../img/PETSHOP/dog-chow.png" alt="">
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p class="Descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quia.</p>
           <p class="Valor">90.000</p>
-        <button class="AgregarCarrito">AGREGAR AL CARRITO</button>
+        <a href="#" class="AgregarCarrito" data-id="3">AGREGAR AL CARRITO</a>
       </li>
       <li class="ProductosBox">
         <img src="../img/PETSHOP/ringo.png" alt="">
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p class="Descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quia.</p>
           <p class="Valor">90.000</p>
-        <button class="AgregarCarrito">AGREGAR AL CARRITO</button>
+        <a href="#" class="AgregarCarrito" data-id="4">AGREGAR AL CARRITO</a>
       </li>
       <li class="ProductosBox">
         <img src="../img/PETSHOP/Chunky.png" alt="">
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p class="Descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quia.</p>
           <p class="Valor">90.000</p>
-        <button class="AgregarCarrito">AGREGAR AL CARRITO</button>
+        <a href="#" class="AgregarCarrito" data-id="5">AGREGAR AL CARRITO</a>
       </li>
       <li class="ProductosBox">
         <img src="../img/PETSHOP/excellent.png" alt="">
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p class="Descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quia.</p>
           <p class="Valor">90.000</p>
-        <button class="AgregarCarrito">AGREGAR AL CARRITO</button>
+        <a href="#" class="AgregarCarrito" data-id="6">AGREGAR AL CARRITO</a>
       </li>
       <li class="ProductosBox">
         <img src="../img/PETSHOP/monello.png" alt="">
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p class="Descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quia.</p>
           <p class="Valor">90.000</p>
-        <button class="AgregarCarrito">AGREGAR AL CARRITO</button>
+        <a href="#" class="AgregarCarrito" data-id="7">AGREGAR AL CARRITO</a>
       </li>
       <li class="ProductosBox">
         <img src="../img/PETSHOP/nutra.png" alt="">
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p class="Descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quia.</p>
           <p class="Valor">90.000</p>
-        <button class="AgregarCarrito">AGREGAR AL CARRITO</button>
+        <a href="#" class="AgregarCarrito" data-id="8">AGREGAR AL CARRITO</a>
       </li>
       <li class="ProductosBox">
         <img src="../img/PETSHOP/max.png" alt="">
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p class="Descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quia.</p>
           <p class="Valor">90.000</p>
-        <button class="AgregarCarrito">AGREGAR AL CARRITO</button>
+        <a href="#" class="AgregarCarrito" data-id="9">AGREGAR AL CARRITO</a>
       </li>
     </ul>
   </article>
 </section>
 <?php include 'codigoReutilizable/footer.php'?>
+
+<script src="../js/carritoCompras.js"></script>
