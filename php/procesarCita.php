@@ -133,7 +133,7 @@ $conexion = conn();
                 <input type="email" class="campoFormularioProgramarCita" name="Email" required>
 
                 <label  class="titulos">Tipo de consulta:</label>
-                <input type="date" id="campoFechaFormProgramarCita" name="FechaConsulta" required>
+                <input type="form" id="campoConsultaFormProgramarCita" name="FechaConsulta" required>
 
                 <label  class="titulos">Fecha de cita:</label>
                 <input type="date" id="campoFechaFormProgramarCita" name="FechaConsulta" required>
