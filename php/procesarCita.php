@@ -135,16 +135,16 @@ $conexion = conn();
 
                 <label  class="titulos">Tipo de consulta:</label>
                 <select name="FechaConsulta" id="campoConsultaFormProgramarCita" required>
-                <option value="Consulta General">IdTipoConsulta</option>
-                <option value="Peluqueria">IdTipoConsulta</option>
-                <option value="Perdida de peso">IdTipoConsulta</option>
-                <option value="Caída de pelo">IdTipoConsulta</option>
-                <option value="Habitos no comunes">IdTipoConsulta</option>
-                <option value="Consulta General">IdTipoConsulta</option>
-                <option value="Infeccion de herida">IdTipoConsulta</option>
-                <option value="Medicina Preventiva">IdTipoConsulta</option>
-                <option value="Urgencia">IdTipoConsulta</option>
-                <option value="Ortopedia">IdTipoConsulta</option>                                
+                <option value="IdTipoConsulta">Consulta General</option>
+                <option value="IdTipoConsulta">Peluqueria</option>
+                <option value="IdTipoConsulta">Perdida de peso</option>
+                <option value="IdTipoConsulta">Caída de pelo</option>
+                <option value="IdTipoConsulta">Habitos no comunes</option>
+                <option value="IdTipoConsulta">onsulta General</option>
+                <option value="IdTipoConsulta">Infeccion de herida</option>
+                <option value="IdTipoConsulta">Medicina Preventiva</option>
+                <option value="IdTipoConsulta">Urgencia</option>
+                <option value="IdTipoConsulta">Ortopedia</option>                                
                 </select>
 
                 <label  class="titulos">Fecha de cita:</label>
