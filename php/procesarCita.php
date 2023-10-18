@@ -22,6 +22,7 @@ if (isset($_SESSION["usuario"])) {
         $nombreCliente = $_POST["NombreCliente"];
         $email = $_POST["Email"];
         $fechaConsulta = $_POST["FechaConsulta"];
+        $IdTipoConsulta = $_POST["IdTipoConsulta"];
 
 
 // Lista de especialistas disponibles.
@@ -133,7 +134,18 @@ $conexion = conn();
                 <input type="email" class="campoFormularioProgramarCita" name="Email" required>
 
                 <label  class="titulos">Tipo de consulta:</label>
-                <input type="text" id="campoConsultaFormProgramarCita" name="FechaConsulta" required>
+                <select name="FechaConsulta" id="campoConsultaFormProgramarCita" required>
+                <option value="Consulta General">IdTipoConsulta</option>
+                <option value="Peluqueria">IdTipoConsulta</option>
+                <option value="Perdida de peso">IdTipoConsulta</option>
+                <option value="Caída de pelo">IdTipoConsulta</option>
+                <option value="Habitos no comunes">IdTipoConsulta</option>
+                <option value="Consulta General">IdTipoConsulta</option>
+                <option value="Infeccion de herida">IdTipoConsulta</option>
+                <option value="Medicina Preventiva">IdTipoConsulta</option>
+                <option value="Urgencia">IdTipoConsulta</option>
+                <option value="Ortopedia">IdTipoConsulta</option>                                
+                </select>
 
                 <label  class="titulos">Fecha de cita:</label>
                 <input type="date" id="campoFechaFormProgramarCita" name="FechaConsulta" required>

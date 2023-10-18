@@ -22,6 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
         reset: true
     });
 
+    sr.reveal('#campoConsultaFormProgramarCita', {
+        origin: 'top',
+        distance: '20px',
+        duration: 1000,
+        delay: 400, 
+        easing: 'ease-in-out',
+        reset: true
+    });
+
     sr.reveal('#campoFechaFormProgramarCita', {
         origin: 'top',
         distance: '20px',
