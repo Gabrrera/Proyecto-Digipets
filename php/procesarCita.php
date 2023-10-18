@@ -132,9 +132,11 @@ $conexion = conn();
                 <label class="titulos">Correo electrónico:</label>
                 <input type="email" class="campoFormularioProgramarCita" name="Email" required>
 
-                <label  class="titulos">Fecha de cita:</label>
+                <label  class="titulos">Tipo de consulta:</label>
                 <input type="date" id="campoFechaFormProgramarCita" name="FechaConsulta" required>
 
+                <label  class="titulos">Fecha de cita:</label>
+                <input type="date" id="campoFechaFormProgramarCita" name="FechaConsulta" required>
                 </select>
 
                 <button type="submit">Agendar Cita</button>
