@@ -22,13 +22,16 @@ if (isset($_SESSION["usuario"])) {
         $nombreCliente = $_POST["NombreCliente"];
         $email = $_POST["Email"];
         $fechaConsulta = $_POST["FechaConsulta"];
-        $IdTipoConsulta = $_POST["IdTipoConsulta"];
-
+        
         if (empty($nombreCliente) || empty($email) || empty($fechaConsulta) || empty($idTipoConsulta)) {
             echo "Por favor, complete todos los campos.";
         } else {
-            if (empty($nombreCliente) || empty($email) || empty($fechaConsulta) || empty($idTipoConsulta)) {
-                echo "Por favor, complete todos los campos.";
+            $sqlRandomEspecialista = "SELECT idEspecialista FROM Especialistas ORDER BY RAND() LIMIT 1";
+            $result = $conexion->query($sqlRandomEspecialista);
+        
+            if ($result) {
+                $row = $result->fetch_assoc();
+                $idEspecialista = $row['idEspecialista'];
         }
     }
 
