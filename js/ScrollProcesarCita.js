@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         origin: 'top',
         distance: '20px',
         duration: 1000,
-        delay: 600, 
+        delay: 500, 
         easing: 'ease-in-out',
         reset: true
     });
