@@ -24,12 +24,13 @@ if (isset($_SESSION["usuario"])) {
         $fechaConsulta = $_POST["FechaConsulta"];
         $IdTipoConsulta = $_POST["IdTipoConsulta"];
 
-
-// Lista de especialistas disponibles.
-$especialistas = array("1", "2", "3", "4", "5");
-
-// Especialista al azar
-$idEspecialista = $especialistas[array_rand($especialistas)];
+        if (empty($nombreCliente) || empty($email) || empty($fechaConsulta) || empty($idTipoConsulta)) {
+            echo "Por favor, complete todos los campos.";
+        } else {
+            if (empty($nombreCliente) || empty($email) || empty($fechaConsulta) || empty($idTipoConsulta)) {
+                echo "Por favor, complete todos los campos.";
+        }
+    }
 
 // Conecta a la base de datos
 $conexion = conn();
