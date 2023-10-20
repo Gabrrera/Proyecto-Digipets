@@ -18,22 +18,21 @@ if (isset($_SESSION["usuario"])) {
     include 'conexion.php';
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        // Recibe los datos del formulario
-        $nombreCliente = $_POST["NombreCliente"];
-        $email = $_POST["Email"];
-        $fechaConsulta = $_POST["FechaConsulta"];
-        
+
+        $idTipoConsulta = $_POST["IdTipoConsulta"];
+            echo ($idTipoConsulta); 
+            
         if (empty($nombreCliente) || empty($email) || empty($fechaConsulta) || empty($idTipoConsulta)) {
             echo "Por favor, complete todos los campos.";
         } else {
             $sqlRandomEspecialista = "SELECT idEspecialista FROM Especialistas ORDER BY RAND() LIMIT 1";
             $result = $conexion->query($sqlRandomEspecialista);
-        
             if ($result) {
                 $row = $result->fetch_assoc();
                 $idEspecialista = $row['idEspecialista'];
         }
     }
+
 
 // Conecta a la base de datos
 $conexion = conn();
@@ -43,8 +42,34 @@ $conexion = conn();
         die("Error en la conexión a la base de datos: " . mysqli_connect_error());
     }
 
+
+    if ($email == TRUE)
+    {
+        $sql = "SELECT Clientes.IdCliente, Consultas.IdCliente
+        FROM Clientes
+        INNER JOIN Consultas ON Consultas.IdCliente = Clientes.IdCliente"
+    }
+
+    else {
+        echo "Correo invalido por favor verificar"
+    }
+    
+
+    //Query validacion email y me traiga ID 
+    $sql
+    //Query SQL para traer los datos del IdTipoConsulta
+    $sql = "SELECT TipoConsultas.idTipoConsulta, Consultas.idTipoConsulta
+    FROM TipoConsultas
+    INNER JOIN Consultas ON Consultas.idTipoConsulta = TipoConsultas.idTipoConsulta" 
+
+
+    //Query SQL para traer los datos del IdMascota
+    $sql = "SELECT Mascotas.IdMascota, Consultas.IdMascota
+    FROM Mascotas
+    INNER JOIN Consultas ON Consultas.IdMascota = Mascotas.IdMascota"
+
     // Query SQL para insertar la cita
-    $sql = "INSERT INTO Citas (NombreCliente, Email, FechaConsulta, IdEspecialista) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO Consultas (IdConsulta, IdTipoConsulta, IdEspecialista, IdCliente, IdMascota, FechaConsulta, CostoConsulta) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
     // Prepara la consulta
     $stmt = $conexion->prepare($sql);
@@ -131,8 +156,6 @@ $conexion = conn();
         <div id="popUpProgramarCita" class="container">
             <h1>Agendar Cita Veterinaria</h1>
             <form action="" method="post">
-                <label class="titulos">Nombre completo:</label>
-                <input type="text" class="campoFormularioProgramarCita" name="NombreCliente" required>
 
                 <label class="titulos">Correo electrónico:</label>
                 <input type="email" class="campoFormularioProgramarCita" name="Email" required>
