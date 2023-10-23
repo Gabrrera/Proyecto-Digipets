@@ -1,5 +1,5 @@
 <!--SECCION DE LA PARTE FINAL -->
-<link rel="stylesheet" type="text/css" href="http://localhost/PROYECTO-DIGIPETS/assets/css/codigoReutilizable/footerPHP.css" >
+<link rel="stylesheet" type="text/css" href="../../css/codigoReutilizable/footerPHP.css" >
 
 
 <section>

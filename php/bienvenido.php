@@ -7,10 +7,9 @@
     <meta name="keywords" content="responsive, Veterinaria, virtual, pets, telemedicina, animales,consultas">
     <meta name="description" content="Sitio web">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="NATALIA ACOSTA, JAIDER MORALES, GABRIEL BARRERA, JULIAN GRANADOS, LUIS VARRON">
+    <meta name="author" content="NATALIA ACOSTA, JAIDER MORALES, GABRIEL BARRERA, JULIAN GRANADOS, LUIS VARRON"> 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="css/estilobienvenido" > -->
-    <link rel="stylesheet" type="text/css" href="http://localhost/PROYECTO-DIGIPETS/assets/css/estilobienvenido.css" >
+    <link rel="stylesheet" type="text/css" href="css/estilobienvenido">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!--LINK PARA LIBRERIA DE ICONOS -->

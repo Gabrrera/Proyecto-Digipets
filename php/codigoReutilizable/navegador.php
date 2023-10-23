@@ -15,7 +15,7 @@
 ?>
 
 
-<link rel="stylesheet" type="text/css" href="http://localhost/PROYECTO-DIGIPETS/assets/css/codigoReutilizable/navegadorPHP.css" >
+<link rel="stylesheet" type="text/css" href="../../css/codigoReutilizable/navegadorPHP.css" >
 <!--  ENCABEZADO DE LA PAGINA -->
 <nav id="navBarraMenu">
         
