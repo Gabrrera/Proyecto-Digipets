@@ -42,11 +42,11 @@
     </ul>
     <!--GIF DE CASA COMPRAS-->
     <ul class="divisiones" id="divisionCuatro">
-        <li class="subDivisiones"><img class="imgBarraMenu" src="../gif/pet-shop.gif" alt=""></li>
+        <li class="subDivisiones"><img class="imgBarraMenu" src="../../gif/pet-shop.gif" alt=""></li>
     </ul>
     <!--CERRAR SESION Y NOMBRE-->
     <ul class="subDivisiones" id="divisionUsuario">
-        <li><img id="usuarioImg" src="../img/usuarioperfil.png" ></li>
+        <li><img id="usuarioImg" src="../../img/usuarioperfil.png" ></li>
     </ul>
 </nav>
 
@@ -54,8 +54,8 @@
   <article>
     <div>
         <ul id="desplegableUsuario">
-            <li class="desplegableopciones"><a class="desplegableopciones2" href="#"><img src="../img/configuraciones.pn">CONFIGURACION</a></li>
-            <li class="desplegableopciones"><a class="desplegableopciones2" href="#"><img src="../img/correo.pn"><?php echo strtoupper($_SESSION["usuario"]);?></a></li>
+            <li class="desplegableopciones"><a class="desplegableopciones2" href="#"><img src="../../img/configuraciones.png">CONFIGURACION</a></li>
+            <li class="desplegableopciones"><a class="desplegableopciones2" href="#"><img src="../../img/correo.png"><?php echo strtoupper($_SESSION["usuario"]);?></a></li>
             <li class="desplegableopciones"><a class="desplegableopciones2" href="CerrarSesion.php"><img class="desplegablesImagenes" src="../img/sesion.png"> CERRAR SESION </a></li>
         </ul>   
     </div> 
