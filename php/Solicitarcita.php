@@ -97,6 +97,7 @@
     <title>Agendar Cita Veterinaria</title>
     <link rel="stylesheet" type="text/css" href="../css/estilosolicitarCita.css">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../js/ScrollProcesarCita.js"></script>
 </head>
 <body>
 
@@ -136,7 +137,5 @@
     </nav>
               
 <?php include 'codigoReutilizable/footer.php'; ?>
-   
-  <script src="../js/ScrollProcesarCita.js"></script>
 </body>
 </html>
