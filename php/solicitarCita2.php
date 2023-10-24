@@ -10,8 +10,6 @@
     </head>
 <body>
 
-<?php include 'codigoReutilizable/navegador.php'; ?>
-
     <!--SECCION PARA AGENDAR CITA -->
     <nav id="navProgramarCita">
         <div id="popUpProgramarCita" class="container">
@@ -43,7 +41,7 @@
             </form>
         </div> 
         <div id="mensajeExito" class="mensaje-exito" style="display: none;">Cita agendada con éxito. ¡Gracias!</div>
-    </nav>     
-<?php include 'codigoReutilizable/footer.php'; ?>
+    </nav>  
+
 </body>
 </html>
