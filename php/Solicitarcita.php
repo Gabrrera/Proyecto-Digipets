@@ -5,14 +5,14 @@
 // error_reporting(E_ALL);
 
 // // Inicia la sesión
-session_start();
-$_SESSION["usuario"] = "usuario"; 
+// session_start();
+// $_SESSION["usuario"] = "usuario"; 
 
-if (isset($_SESSION["usuario"])) {
-    strtoupper($_SESSION["usuario"]);
-} else {
-    echo "Usuario no definido"; 
-}
+// if (isset($_SESSION["usuario"])) {
+//     strtoupper($_SESSION["usuario"]);
+// } else {
+//     echo "Usuario no definido"; 
+// }
 
 
 // // Conexión a base de datos
@@ -136,7 +136,7 @@ if (isset($_SESSION["usuario"])) {
         <div id="mensajeExito" class="mensaje-exito" style="display: none;">Cita agendada con éxito. ¡Gracias!</div>
     </nav>
               
-    <?php include 'codigoReutilizable/footer.php'; ?>
+<?php include 'codigoReutilizable/footer.php'; ?>
    
   <script src="../js/ScrollProcesarCita.js"></script>
 </body>
