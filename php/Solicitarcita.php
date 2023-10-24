@@ -5,14 +5,14 @@
 // error_reporting(E_ALL);
 
 // // Inicia la sesión
-// session_start();
-// $_SESSION["usuario"] = "usuario"; 
+session_start();
+$_SESSION["usuario"] = "usuario"; 
 
-// if (isset($_SESSION["usuario"])) {
-//     strtoupper($_SESSION["usuario"]);
-// } else {
-//     echo "Usuario no definido"; 
-// }
+if (isset($_SESSION["usuario"])) {
+    strtoupper($_SESSION["usuario"]);
+} else {
+    echo "Usuario no definido"; 
+}
 
 
 // // Conexión a base de datos
