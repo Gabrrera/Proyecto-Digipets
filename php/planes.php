@@ -13,7 +13,7 @@
 	      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="../css/estiloplanes.css">
-        <script src="js/carrito.js" async></script>
+        <script src="../js/carrito.js" async></script>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
 <body>
@@ -24,49 +24,49 @@
           <div class="contenedor-items">
               <div class="item">
                   <span class="titulo-item">Categoria 1</span>
-                  <img src="img/imagenes-planes/boxengasse.png" alt="" class="img-item">
+                  <img src="../img/imagenes-planes/boxengasse.png" alt="" class="img-item">
                   <span class="precio-item">$15.000</span>
                   <button class="boton-item">Agregar al Carrito</button>
               </div>
               <div class="item">
                   <span class="titulo-item">Categoria 2</span>
-                  <img src="img/imagenes-planes/englishrose.png" alt="" class="img-item">
+                  <img src="../img/imagenes-planes/englishrose.png" alt="" class="img-item">
                   <span class="precio-item">$25.000</span>
                   <button class="boton-item">Agregar al Carrito</button>
               </div>
               <div class="item">
                   <span class="titulo-item">Categoria 3</span>
-                  <img src="img/imagenes-planes/knocknap.png" alt="" class="img-item">
+                  <img src="../img/imagenes-planes/knocknap.png" alt="" class="img-item">
                   <span class="precio-item">$35.000</span>
                   <button class="boton-item">Agregar al Carrito</button>
               </div>
               <div class="item">
                 <span class="titulo-item">Categoria 4</span>
-                <img src="img/imagenes-planes/lanight.png" alt="" class="img-item">
+                <img src="../img/imagenes-planes/lanight.png" alt="" class="img-item">
                 <span class="precio-item">$18.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
                 <span class="titulo-item">Categoria 5</span>
-                <img src="img/imagenes-planes/silverall.png" alt="" class="img-item">
+                <img src="../img/imagenes-planes/silverall.png" alt="" class="img-item">
                 <span class="precio-item">$32.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
                 <span class="titulo-item">Categoria 6</span>
-                <img src="img/imagenes-planes/skinglam.png" alt="" class="img-item">
+                <img src="../img/imagenes-planes/skinglam.png" alt="" class="img-item">
                 <span class="precio-item">$18.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
                 <span class="titulo-item">Categoria 7</span>
-                <img src="img/imagenes-planes/midimix.png" alt="" class="img-item">
+                <img src="../img/imagenes-planes/midimix.png" alt="" class="img-item">
                 <span class="precio-item">$54.000</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
               <span class="titulo-item">Categoria 8</span>
-              <img src="img/imagenes-planes/sirblue.png" alt="" class="img-item">
+              <img src="../img/imagenes-planes/sirblue.png" alt="" class="img-item">
               <span class="precio-item">$32.000</span>
               <button class="boton-item">Agregar al Carrito</button>
           </div>
