@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Agendar Cita Veterinaria</title>
-        <link rel="stylesheet" type="text/css" href="css/estilosolicitarCita.css">
+        <link rel="stylesheet" type="text/css" href="../css/estilosolicitarCita.css">
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="../js/ScrollProcesarCita.js"></script>
     </head>
