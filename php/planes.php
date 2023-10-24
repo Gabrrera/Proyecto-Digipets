@@ -1,3 +1,8 @@
+<?php 
+    include 'codigoReutilizable/navegador.php'; 
+    include 'codigoReutilizable/footer.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

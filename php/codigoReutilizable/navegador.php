@@ -35,7 +35,7 @@
         <li class="subDivisiones"><a class="redirecDivisionDos" href=""><img class="imgBarraMenu" id="imgDivisionDos" src="../gif/search.gif" alt="" ></a></li> <!--GIF DE LUPA-->
         <li class="subDivisiones"><a class="redirecDivisionDos" href="Solicitarcita.php">Solicitar cita</a></li> 
         <li class="subDivisiones"><a class="redirecDivisionDos" href="#">servicios</a></li>
-        <li class="subDivisiones"><a class="redirecDivisionDos" href="#">Planes</a></li>
+        <li class="subDivisiones"><a class="redirecDivisionDos" href="planes.php">Planes</a></li>
         <li class="subDivisiones"><a class="redirecDivisionDos" href="#">Donaciones</a></li> 
         <li class="subDivisiones"><a class="redirecDivisionDos" href="petshop.php">PetShop</a></li>
         <li class="subDivisiones"><a class="redirecDivisionDos" href="php/ReporteUsuarios.php">Reporte</a></li>
