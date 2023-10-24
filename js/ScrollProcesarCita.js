@@ -94,10 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // BOTON ALERT
 
-bontonEnviar = document.getElementById="botonEnviar";
+bontonEnviar = document.getElementById('botonEnviar');
 
 bontonEnviar.addEventListener("click",function() {
 
-    alert="cita agendada con exito"
+    alert("cita agendada con exito");
     
 })
