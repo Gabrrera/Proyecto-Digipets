@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendar Cita Veterinaria</title>
-    <link rel="stylesheet" type="text/css" href="css/estilosolicitarCita.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="../js/ScrollProcesarCita.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agendar Cita Veterinaria</title>
+        <link rel="stylesheet" type="text/css" href="css/estilosolicitarCita.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="../js/ScrollProcesarCita.js"></script>
+    </head>
 <body>
 
 <?php include 'codigoReutilizable/navegador.php'; ?>
@@ -43,8 +43,7 @@
             </form>
         </div> 
         <div id="mensajeExito" class="mensaje-exito" style="display: none;">Cita agendada con éxito. ¡Gracias!</div>
-    </nav>
-              
+    </nav>     
 <?php include 'codigoReutilizable/footer.php'; ?>
 </body>
 </html>
