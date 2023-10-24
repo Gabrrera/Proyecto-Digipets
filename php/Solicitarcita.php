@@ -1,4 +1,3 @@
-<?php
 
 
 // ini_set('display_errors', 1);
@@ -86,7 +85,7 @@
 //     // Cierra la conexión a la base de datos
 //     $conexion->close();
 // }
-?>
+
 
 
 
