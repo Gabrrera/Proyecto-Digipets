@@ -1,98 +1,143 @@
 <?php
-    
-    session_start();
 
-    if(!isset($_SESSION['usuario'])){
-        echo'
-            <script>
-                alert("Por favor debes iniciar sesion");
-                window.location="../index.html";
-            </script>
-        ';
-        session_destroy();
-        die(); 
-    }   
-  
+
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+
+// // Inicia la sesión
+// session_start();
+// $_SESSION["usuario"] = "usuario"; 
+
+// if (isset($_SESSION["usuario"])) {
+//     strtoupper($_SESSION["usuario"]);
+// } else {
+//     echo "Usuario no definido"; 
+// }
+
+
+// // Conexión a base de datos
+//     include 'conexion.php';
+
+//     if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+//         $idTipoConsulta = $_POST["IdTipoConsulta"];
+//             echo ($idTipoConsulta); 
+            
+//         if (empty($nombreCliente) || empty($email) || empty($fechaConsulta) || empty($idTipoConsulta)) {
+//             echo "Por favor, complete todos los campos.";
+//         } else {
+//             $sqlRandomEspecialista = "SELECT idEspecialista FROM Especialistas ORDER BY RAND() LIMIT 1";
+//             $result = $conexion->query($sqlRandomEspecialista);
+//             if ($result) {
+//                 $row = $result->fetch_assoc();
+//                 $idEspecialista = $row['idEspecialista'];
+//         }
+//     }
+
+
+// // Conecta a la base de datos
+// $conexion = conn();
+
+//     // Verifica la conexión
+//     if (!$conexion) {
+//         die("Error en la conexión a la base de datos: " . mysqli_connect_error());
+//     }
+
+
+//     if ($email == TRUE)
+//     {
+//         $sql = "SELECT Clientes.IdCliente, Consultas.IdCliente
+//         FROM Clientes
+//         INNER JOIN Consultas ON Consultas.IdCliente = Clientes.IdCliente"
+//     }
+
+//     else {
+//         echo "Correo invalido por favor verificar"
+//     }
+    
+
+//     //Query validacion email y me traiga ID 
+//     $sql
+//     //Query SQL para traer los datos del IdTipoConsulta
+//     $sql = "SELECT TipoConsultas.idTipoConsulta, Consultas.idTipoConsulta
+//     FROM TipoConsultas
+//     INNER JOIN Consultas ON Consultas.idTipoConsulta = TipoConsultas.idTipoConsulta" 
+
+
+//     //Query SQL para traer los datos del IdMascota
+//     $sql = "SELECT Mascotas.IdMascota, Consultas.IdMascota
+//     FROM Mascotas
+//     INNER JOIN Consultas ON Consultas.IdMascota = Mascotas.IdMascota"
+
+//     // Query SQL para insertar la cita
+//     $sql = "INSERT INTO Consultas (IdConsulta, IdTipoConsulta, IdEspecialista, IdCliente, IdMascota, FechaConsulta, CostoConsulta) VALUES (?, ?, ?, ?, ?, ?, ?)";
+
+//     // Prepara la consulta
+//     $stmt = $conexion->prepare($sql);
+//     $stmt->bind_param("sssi", $nombreCliente, $email, $fechaConsulta, $idEspecialista);
+
+//     // Ejecuta la consulta
+//     if ($stmt->execute()) {
+//         echo "Cita agendada con éxito. ¡Gracias!";
+//     } else {
+//         echo "Error al agendar la cita: " . $conexion->error;
+//     }
+
+//     // Cierra la conexión a la base de datos
+//     $conexion->close();
+// }
 ?>
 
+
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <title>DIGIPETS</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="responsive, Veterinaria, virtual, pets, telemedicina, animales,consultas">
-    <meta name="description" content="Sitio web">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="NATALIA ACOSTA, JAIDER MORALES, GABRIEL BARRERA, JULIAN GRANADOS, LUIS VARRON">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="http://localhost/Digipets/code/css/estilobienvenido.css" >
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <!--LINK PARA LIBRERIA DE ICONOS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;900&display=swap" rel="stylesheet">
-    
+    <title>Agendar Cita Veterinaria</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilosolicitarCita.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-<!--  ENCABEZADO DE LA PAGINA -->
-<nav >
-      
-    <!--ICONO DE MENU HAMBURGUESA-->
-    <input type="checkbox" id="check">
-    <label for ="check" class="checkbtn"> 
-        <i class="fas fa fa-bars"></i>
-    </label>
-    <!--LOGO-->
-    <ul class="lista" id="l1">
-      <li ><a href="bienvenido.php"><img src="../img/LOGO-HORIZONTAL.png" alt=""></a></li>
-    </ul> 
-    <!--ELEMENTOS DEL MENU -->
-    <ul class="lista" id="l2">
-        <li ><a href=""><img src="../gif/search.gif" class="lupa"  alt="" ></a></li> <!--GIF DE LUPA-->
-        <li><a  href="/Solicitarcita.php">Solicitar cita</a></li> 
-        <li ><a href="../servicios.html">servicios</a></li>
-        <li ><a href="../Planes.html">Planes</a></li>
-        <li><a  href="../Donaciones.html">Donaciones</a></li> 
-        <li ><a href="../PetShop.html">PetShop</a></li>
-        <li><a href="ReporteUsuarios.php" class="btn-small blue z-depth-2">Reporte</a></li>
-    </ul>
-    <!--GIF DE CASA COMPRAS-->
-    <ul class="lista" id="l4">
-            <li><a id="boton1" href=""><img src="../gif/pet-shop.gif" alt=""></a></li>
-    </ul>
-    <!--CERRAR SESION Y NOMBRE-->
 
+<?php include 'codigoReutilizable/navegador.php'; ?>
 
-   <ul class="lista" id="usuario">
-    <li><img src="../img/usuario.png" onclick="despliegue('contenedorcompras')"></li>
+    <!--SECCION PARA AGENDAR CITA -->
+    <nav id="navProgramarCita">
+        <div id="popUpProgramarCita" class="container">
+            <h1>Agendar Cita Veterinaria</h1>
+            <form action="" method="post">
 
-</nav>
+                <label class="titulos">Correo electrónico:</label>
+                <input type="email" class="campoFormularioProgramarCita" name="Email" required>
 
-<div id="contenedorcompras" class="cerrado">
-  <article>
-    <div>
+                <label  class="titulos">Tipo de consulta:</label>
+                <select name="FechaConsulta" id="campoConsultaFormProgramarCita" required>
+                <option value="IdTipoConsulta">Consulta General</option>
+                <option value="IdTipoConsulta">Peluqueria</option>
+                <option value="IdTipoConsulta">Perdida de peso</option>
+                <option value="IdTipoConsulta">Caída de pelo</option>
+                <option value="IdTipoConsulta">Habitos no comunes</option>
+                <option value="IdTipoConsulta">Consulta General</option>
+                <option value="IdTipoConsulta">Infeccion de herida</option>
+                <option value="IdTipoConsulta">Medicina Preventiva</option>
+                <option value="IdTipoConsulta">Urgencia</option>
+                <option value="IdTipoConsulta">Ortopedia</option>                                
+                </select>
 
+                <label  class="titulos">Fecha de cita:</label>
+                <input type="date" id="campoFechaFormProgramarCita" name="FechaConsulta" required>
+                </select>
+
+                <button id="botonEnviar" type="submit">Agendar Cita</button>
+            </form>
+        </div> 
+        <div id="mensajeExito" class="mensaje-exito" style="display: none;">Cita agendada con éxito. ¡Gracias!</div>
+    </nav>
+              
+    <?php include 'codigoReutilizable/footer.php'; ?>
    
-    <ul class="lista8" id="">
-<li> <a href=""><img class="icono" src="../img/configuraciones.png">CONFIGURACION</a></li>
-<li><a href="#"><img class="icono" src="../img/correo.png"><?php echo strtoupper($_SESSION["usuario"]);?></li>
-<li><a href="CerrarSesion.php"><img class="icono" src="../img/sesion.png"> CERRAR SESION </a></li>
-</ul>
-
-
-
-    
-  </article>
-</div>
-
-
-
-  </article>
-  <div><a id="" href=""></a></div>
-</div>
- 
-
-</nav>
-<!--TERMINA ENCABEZADO DE LA PAGINA -->>
+  <script src="../js/ScrollProcesarCita.js"></script>
+</body>
+</html>
