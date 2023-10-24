@@ -1,8 +1,3 @@
-<?php 
-    include 'codigoReutilizable/navegador.php'; 
-    include 'codigoReutilizable/footer.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,35 +12,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" type="text/css" href="http://localhost/Digipets/code/assets/css/estiloplanes.css">
-        <link rel="stylesheet" type="text/css" href="http://localhost/Digipets/code/assets/css/estilonavegador.css">
+        <link rel="stylesheet" type="text/css" href="../css/estiloplanes.css">
         <script src="js/carrito.js" async></script>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
 <body>
-
-    <nav id="">
-        <div>
-    
-            <ul class="lista" id="l1">
-              <li><a href="index.html"><img src="img/LOGO-HORIZONTAL.png" alt=""></a></li>
-            </ul> 
-            <ul class="lista" id="l2">
-              <li><a href=""><img src="gif/search.gif" alt="" ></a></li>
-              <li><a  href="Solicitarcita.html">Solicitar cita</a></li> 
-              <li ><a href="servicios.html">servicios</a></li>
-              <li ><a href="Planes.html">Planes</a></li>
-              <li><a  href="Donaciones.html">Donaciones</a></li> 
-              <li ><a href="PetShop.html">PetShop</a></li>
-            </ul>
-            <ul class="lista" id="l3">
-              <li><div><a id="boton" href="#inisiarsesion">Iniciar sesión</a></div></li>
-            </ul>  
-            <ul class="lista" id="l4">
-              <li><a id="boton1" href=""><img src="gif/pet-shop.gif" alt=""></a></li>
-            </ul>
-            </div>
-        </nav>
+<?php include 'codigoReutilizable/navegador.php'; ?>
 
         <section class="contenedor">
           <!-- Contenedor de elementos -->
@@ -120,5 +92,6 @@
             </div>
         </div>
         </section> 
+<?php include 'codigoReutilizable/footer.php'; ?>
 </body>
 </html>
