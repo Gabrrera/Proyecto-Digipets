@@ -33,7 +33,7 @@
     <!--ELEMENTOS DEL MENU -->
     <ul class="divisiones" id="divisionDos">
         <li class="subDivisiones"><a class="redirecDivisionDos" href=""><img class="imgBarraMenu" id="imgDivisionDos" src="../gif/search.gif" alt="" ></a></li> <!--GIF DE LUPA-->
-        <li class="subDivisiones"><a class="redirecDivisionDos" href="solicitarCita.php">Solicitar cita</a></li> 
+        <li class="subDivisiones"><a class="redirecDivisionDos" href="../solicitarCita.php">Solicitar cita</a></li> 
         <li class="subDivisiones"><a class="redirecDivisionDos" href="#">servicios</a></li>
         <li class="subDivisiones"><a class="redirecDivisionDos" href="planes.php">Planes</a></li>
         <li class="subDivisiones"><a class="redirecDivisionDos" href="#">Donaciones</a></li> 
