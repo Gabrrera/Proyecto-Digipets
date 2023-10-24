@@ -115,7 +115,7 @@
         <a href="#" class="AgregarCarrito" data-id="4">AGREGAR AL CARRITO</a>
       </li>
       <li class="ProductosBox">
-        <img src="../img/PETSHOP/Chunky.png" alt="">
+        <img src="../img/PETSHOP/chunky.png" alt="">
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p class="Descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quia.</p>
           <p class="Valor">90.000</p>
