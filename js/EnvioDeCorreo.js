@@ -8,7 +8,7 @@ function FuncionAjax(NombreParaCita){
     var UrlMeet = CrearMeet();
     console.log("el valor de urlmeet es " + UrlMeet);
     $.ajax({
-        url:'php/EnvioCorreoUrlMeet.php',
+        url:'../php/EnvioCorreoUrlMeet.php',
         data: {miData: 'Enviar', 
             Url: UrlMeet, 
             Nombre: NombreParaCita},
