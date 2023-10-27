@@ -88,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
      if (exito) {
             mostrarMensajeExito();}
             setTimeout(ocultarMensajeExito, 5000);
-            alert("Prueba");
     });
 });
 

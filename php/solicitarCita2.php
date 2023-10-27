@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="../css/estilosolicitarCita2.css">
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="../js/ScrollProcesarCita.js"></script>
+        <script src="../js/CreacionDeMeet.js"></script>
+        <script src="../js/EnvioDeCorreo.js"></script>
     </head>
 <body>
 
@@ -39,7 +41,7 @@
                 <input type="date" id="campoFechaFormProgramarCita" name="FechaConsulta" required>
                 </select>
 
-                <button id="botonEnviar" type="submit">Agendar Cita</button>
+                <button onclick="capturarDatosCita()" id="botonEnviar" type="submit">Agendar Cita</button>
             </form>
         </div> 
         <div id="mensajeExito" class="mensaje-exito" style="display: none;">Cita agendada con éxito. ¡Gracias!</div>
@@ -47,3 +49,10 @@
 <?php include 'codigoReutilizable/footer.php'; ?>
 </body>
 </html>
+
+<script>
+    function capturarDatosCita(){
+        var NombreParaCita = document.getElementsByClassName("campoFormularioProgramarCita")[0].innerText;
+        FuncionAjax(NombreParaCita);
+    }
+</script>
