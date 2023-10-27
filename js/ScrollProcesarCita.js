@@ -88,16 +88,8 @@ document.addEventListener("DOMContentLoaded", function () {
      if (exito) {
             mostrarMensajeExito();}
             setTimeout(ocultarMensajeExito, 5000);
+            alert("Prueba");
     });
 });
 
 
-// BOTON ALERT
-
-bontonEnviar = document.getElementById('botonEnviar');
-
-bontonEnviar.addEventListener("click",function() {
-
-    alert("cita agendada con exito");
-    
-})
