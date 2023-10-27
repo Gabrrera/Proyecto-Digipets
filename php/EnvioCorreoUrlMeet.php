@@ -28,10 +28,10 @@ function Enviar($Url, $NombreParaCita){
         $mail = new PHPMailer(true);
         $mail->SMTPDebug = 2;  // Sacar esta línea para no mostrar salida debug
         $mail->isSMTP();
-        $mail->Host = 'sandbox.smtp.mailtrap.io';  // Host de conexión SMTP
+        $mail->Host = 'smtp.gmail.com';  // Host de conexión SMTP
         $mail->SMTPAuth = true;
-        $mail->Username = 'f48cf08deef282';                 // Usuario SMTP
-        $mail->Password = '053ce72ebec877';                           // Password SMTP
+        $mail->Username = 'choucairprueba1@gmail.com';                 // Usuario SMTP
+        $mail->Password = 'Santik10';                           // Password SMTP
         $mail->SMTPSecure = 'tls';                            // Activar seguridad TLS
         $mail->Port = 587;                                    // Puerto SMTP
     
