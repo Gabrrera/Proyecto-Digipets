@@ -89,4 +89,10 @@ document.addEventListener("DOMContentLoaded", function () {
             mostrarMensajeExito();}
             setTimeout(ocultarMensajeExito, 5000);
     });
+<<<<<<< HEAD
 });
+=======
+});
+
+
+>>>>>>> Jaider

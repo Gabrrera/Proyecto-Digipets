@@ -7,7 +7,11 @@ body {
 
 #navProgramarCita{
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     background-color: #ffffff;
+=======
+    background-color: #fe0000;
+>>>>>>> Jaider
     display: flex;
     justify-content: center;
     width: 100%;
@@ -43,12 +47,20 @@ form {
     margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 #campoConsultaFormProgramarCita{
+=======
+#campoEspecialistaFormProgramarCita{
+>>>>>>> Jaider
     width: 585px;
     height: 40px;
     margin: 0 10px 0 5px;
     border-radius: 5px;
+<<<<<<< HEAD
     margin-bottom: 10px;
+=======
+    margin-bottom: 20px;
+>>>>>>> Jaider
 }
 
 #campoFechaFormProgramarCita{
@@ -82,6 +94,23 @@ button {
 }
 
 
+<<<<<<< HEAD
+=======
+/* Estilo de confirmación de cita*/
+.confirmacion-cita {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px;
+}
+
+/* Estilo para el error */
+.error-cita {
+    background-color: #FF5733; 
+    color: white; 
+    padding: 10px;
+}
+
+>>>>>>> Jaider
 /* Responsive */
 @media (max-width: 768px) {
     #navProgramarCita {
@@ -110,6 +139,7 @@ button {
     }
 }
 
+<<<<<<< HEAD
 /*CONFIRMACION Y ERROR CITA*/
 
 .mensaje-exito {
@@ -124,6 +154,8 @@ button {
     display: none; 
 }
 
+=======
+>>>>>>> Jaider
 
 /*ESTILO NAVEGADOR*/
 

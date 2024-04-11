@@ -1,0 +1,214 @@
+/*ESTILO NAVEGADOR ------------------------------------------------------*/
+/* estilo body */
+*{
+    text-decoration: none;
+    list-style: none;
+    margin:0;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    }
+
+/* comienza la barra menu */
+#navBarraMenu{
+    position: fixed;
+	width: 100%;
+	height: 95px;
+	background-color:rgb(13, 65, 148);
+	z-index: 9;
+}
+/* imagenes barra menu */
+.imgBarraMenu {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+/* estilo subdivisiones barra menu */
+.subDivisiones{
+    float: left;
+    list-style: none;
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+/* estilo divisiones barra menu  */
+.divisiones{
+    float: left;
+    margin: 0% 1.5%;
+}
+
+/* estilo division uno */
+#divisionUno{
+    width: auto;
+}
+
+#imgDivisionUno{
+    width: 150px;
+    height: auto;
+    display: block;
+    text-align: center;
+    border-radius: 0px;
+}
+
+/* estilo division dos*/
+#divisionDos{
+    color: azure;
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+}
+
+#imgDivisionDos{
+    margin-left: 90px;
+}
+
+.redirecDivisionDos{
+    color: azure;
+    padding: 10px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration:none;
+}
+/* estilo division cuatro*/
+#divisionCuatro{
+    width: auto;
+}
+
+/* DESACTIVAR MENU HAMBURGUESA */
+.checkbtn{
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 95px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+ 
+#check{
+     display: none;
+}
+/*FIN DESACTIVAR MENU */
+/*PAGINA RESPONSIVE TABLETS */
+@media (max-width: 1025px){
+    
+ #divisionUno{
+     padding-left: 0%;
+     margin-left: 0%;
+     }
+ ul #lista .divisionUno{
+     font-size: 20px;
+ }
+ #divisionDos img{
+     padding-left:0px;
+     margin-left: 0px;
+ }
+ #divisionDos{
+     padding-left:0px;
+     margin-left: 0px;
+ }
+ #divisionTres{
+     padding-left:0px;
+ }
+ #divisionCuatro{
+     display: none;
+ }
+}
+/*PAGINA RESPONSIVE CELULARES */
+@media only screen and (max-width: 480px) {
+
+
+
+ .checkbtn{
+         display: block;
+     }
+ #divisionTres{
+     display: none;
+ }
+ 
+ #divisionUno img{
+     width: 120px;
+     height: auto;
+ }
+ #divisionDos{    
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background-color:rgb(9, 47, 108) ;
+     top: 95px;
+     right: -100%;
+     text-align: center;
+     transition: all .5s;
+     margin-right: 0px;
+     flex-direction: column;
+ }
+ 
+ #divisionDos li{
+     display: block;
+     margin: 10px 0;
+     height: 50px;
+     min-height: 0px;
+ }
+ #divisionDos li a{
+     font-size: 20px;
+     height: 100%;
+ }
+ #check:checked ~ #divisionDos{
+     right: 0;
+ }
+ 
+}
+/* IMAGEN DE USUARIO */
+
+#divisionUsuario img{
+height: 70px;
+width: auto;
+}
+#contenedorUsuario{
+    top: 95px;
+	z-index: 9;
+	position: fixed;
+	right: 220px;
+	width: 20%;
+	background-color:rgb(13, 65, 148);
+}
+#contenedorUsuario article{
+	width: 100%;
+	height: 20vh;
+}
+
+#contenedorUsuario article div{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+	float: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    background-color: aqua;
+}
+
+#desplegableUsuario{
+    padding: 0;
+    margin: 0;
+}
+.desplegableopciones{
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    color: beige;
+	background-color:rgb(13, 65, 148);
+}
+.desplegableopciones2{
+text-align: center;
+color: beige;
+margin-bottom: 20px;
+}
+.desplegableopciones2 img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+}
