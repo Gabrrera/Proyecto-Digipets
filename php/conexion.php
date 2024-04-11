@@ -6,9 +6,9 @@ error_reporting(E_ALL);
 
 function conn(){
    $hostname = "localhost";
-   $usuariodb = "edigipee8_QA";
+   $usuariodb = "edigipee8_Admin";
    $passworddb = "euxdalyjze25691";
-   $dbname = "edigipee8_Digipets_QA"; 
+   $dbname = "edigipee8_Digipets"; 
 
    // Generardo la conexion con el servidor
    $conectar = mysqli_connect($hostname, $usuariodb, $passworddb, $dbname);
