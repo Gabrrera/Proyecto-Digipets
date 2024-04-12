@@ -25,6 +25,15 @@ if($action==("Enviar")){
 
 function Enviar($Url, $NombreParaCita){
     try {
+
+        $mail->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        )
+        
         $mail = new PHPMailer(true);
         $mail->SMTPDebug = 2;  // Sacar esta línea para no mostrar salida debug
         $mail->isSMTP();
