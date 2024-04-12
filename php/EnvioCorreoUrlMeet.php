@@ -28,7 +28,7 @@ function Enviar($Url, $NombreParaCita){
         $mail = new PHPMailer(true);
         $mail->SMTPDebug = 2;  // Sacar esta línea para no mostrar salida debug
         $mail->isSMTP();
-        $mail->Host = 'sandbox.smtp.mailtrap.io';  // Host de conexión SMTP
+        $mail->Host = 'mail.digipets.com.co';//'sandbox.smtp.mailtrap.io';  // Host de conexión SMTP
         $mail->SMTPAuth = true;
         $mail->Username = 'f48cf08deef282';                 // Usuario SMTP
         $mail->Password = '053ce72ebec877';                           // Password SMTP
